@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>VS System Deck Builder</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <style>
+    body {
+      display: block;
+      margin: 0;
+    }
+
+    .navbar {
+      box-sizing: border-box;
+      padding: 10px 8px 5px;
+      background: #303030;
+      height: '50px';
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      box-shadow: 0 -10px 10px 10px #808080;
+      color: #fff;
+      font-size: 20px;
+      line-height: 25px;
+      display: flex;
+      flex-direction: column;
+      z-index: 10;
+    }
+
+    .dotbar {
+      width: 100%;
+      height: 10px;
+      line-height: 10px;
+      font-size: 35px;
+      color: #989898;
+    }
+
+    .dot-selected {
+      color: white;
+    }
+
+    .pane-root {
+      overflow: hidden;
+    }
+
+    .pane-container {
+      display: flex;
+      will-change: transform;
+      transform: translate3d(0%, 0, 0);
+      padding-top: 50px;
+      height: 100vh;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <div class="pane-root">
+    <nav class="navbar">
+      <div>Card List</div>
+      <div class="dotbar">
+        <span class="dot-selected">&middot;</span><span>&middot;</span>
+      </div>
+    </nav>
+    <div class="pane-container">
+      <div>Pane 1</div>
+      <div>Pane 2</div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
