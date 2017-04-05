@@ -41,12 +41,40 @@ function increment(count) {
   return count + 1;
 }
 
+function find(arr, fn) {
+  return arr.reduce(function(res, val) {
+    if (res) {
+      return res;
+    }
+
+    var check = fn(val);
+
+    if (check) {
+      res = check;
+    }
+
+    return res;
+  });
+}
+
+function loopIncrement(model, path) {
+  var card = find(model.cards, path.slice(-1));
+  var currentAmount = Immutable.getIn(model, path, 0);
+  if (currentAmount < card.limit) {
+    return Immutable.updateIn(model, path, increment);
+  } else {
+    return Immutable.setIn(model, path, 0);
+  }
+}
+
 function update(model, action) {
   var updated;
+  var card = find(model.cards, action.payload);
 
   switch(action.type) {
     case 'ADD_MC': {
-      updated = Immutable.updateIn(model, ['mc', action.payload], increment);
+      updated = loopIncrement(model, ['mc', action.payload]);
+      // updated = Immutable.updateIn(model, ['mc', action.payload], increment);
       return { model: updated };
     }
     case 'ADD_LOCATION': {
