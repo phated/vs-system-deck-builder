@@ -463,12 +463,6 @@ function view(model, dispatch) {
 function run(effect, sources) {
   switch(effect) {
     case 'INIT_APP': {
-      console.log('attach tabs');
-      var notify = Notify();
-      var tabEE = attach(paneContainerEl);
-      tabEE.on('tab-shown', notify);
-      navbarMount(navbarEl, notify.listen);
-
       return pull(
         pl.read(db),
         pull.map(function (row) {
@@ -505,9 +499,30 @@ var app = {
 
 var sources = start(app);
 
+var firstRender = true;
+var renderRequested = false;
+
 function render(view) {
+  if (renderRequested) {
+    return;
+  }
+
   console.log('render');
-  html.update(paneContainerEl, view, { childrenOnly: true });
+
+  renderRequested = true;
+  requestAnimationFrame(function() {
+    html.update(paneContainerEl, view, { childrenOnly: true });
+    renderRequested = false;
+
+    if (firstRender) {
+      console.log('attach tabs');
+      var notify = Notify();
+      var tabEE = attach(paneContainerEl);
+      tabEE.on('tab-shown', notify);
+      navbarMount(navbarEl, notify.listen);
+      firstRender = false;
+    }
+  });
 }
 
 pull(
