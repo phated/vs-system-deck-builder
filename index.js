@@ -233,7 +233,7 @@ function cardView(card, model, dispatch) {
       used = Immutable.getIn(model, ['token', card.guid], 0);
       break;
     default:
-      debugger;
+      // debugger;
   }
   var addToDeck;
   if (used < card.limit) {
