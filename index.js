@@ -57,24 +57,12 @@ function find(arr, fn) {
   });
 }
 
-function loopIncrement(model, path) {
-  var card = find(model.cards, path.slice(-1));
-  var currentAmount = Immutable.getIn(model, path, 0);
-  if (currentAmount < card.limit) {
-    return Immutable.updateIn(model, path, increment);
-  } else {
-    return Immutable.setIn(model, path, 0);
-  }
-}
-
 function update(model, action) {
   var updated;
-  var card = find(model.cards, action.payload);
 
   switch(action.type) {
     case 'ADD_MC': {
-      updated = loopIncrement(model, ['mc', action.payload]);
-      // updated = Immutable.updateIn(model, ['mc', action.payload], increment);
+      updated = Immutable.updateIn(model, ['mc', action.payload], increment);
       return { model: updated };
     }
     case 'ADD_LOCATION': {
@@ -95,6 +83,30 @@ function update(model, action) {
     }
     case 'ADD_TOKEN': {
       updated = Immutable.updateIn(model, ['token', action.payload], increment);
+      return { model: updated };
+    }
+    case 'RESET_MC': {
+      updated = Immutable.setIn(model, ['mc', action.payload], undefined);
+      return { model: updated };
+    }
+    case 'RESET_LOCATION': {
+      updated = Immutable.setIn(model, ['location', action.payload], undefined);
+      return { model: updated };
+    }
+    case 'RESET_SC': {
+      updated = Immutable.setIn(model, ['sc', action.payload], undefined);
+      return { model: updated };
+    }
+    case 'RESET_PT': {
+      updated = Immutable.setIn(model, ['pt', action.payload], undefined);
+      return { model: updated };
+    }
+    case 'RESET_EQUIPMENT': {
+      updated = Immutable.setIn(model, ['equipment', action.payload], undefined);
+      return { model: updated };
+    }
+    case 'RESET_TOKEN': {
+      updated = Immutable.setIn(model, ['token', action.payload], undefined);
       return { model: updated };
     }
     case 'EXPAND_CARD': {
@@ -204,35 +216,40 @@ function cardView(card, model, dispatch) {
   switch(card.type) {
     case 'Main Character L1':
     case 'Main Character L2':
-      type = 'ADD_MC'
+      type = 'MC';
       used = Immutable.getIn(model, ['mc', card.guid], 0);
       break;
     case 'Supporting character':
-      type = 'ADD_SC';
+      type = 'SC';
       used = Immutable.getIn(model, ['sc', card.guid], 0);
       break;
     case 'Plot twist':
-      type = 'ADD_PT';
+      type = 'PT';
       used = Immutable.getIn(model, ['pt', card.guid], 0);
       break;
     case 'Location':
     case 'Special Location':
-      type = 'ADD_LOCATION';
+      type = 'LOCATION';
       used = Immutable.getIn(model, ['location', card.guid], 0);
       break;
     case 'Equipment':
-      type = 'ADD_EQUIPMENT';
+      type = 'EQUIPMENT';
       used = Immutable.getIn(model, ['equipment', card.guid], 0);
       break;
     case '':
     case 'Facehugger Pile':
-      type = 'ADD_TOKEN';
+      type = 'TOKEN';
       used = Immutable.getIn(model, ['token', card.guid], 0);
       break;
     default:
       debugger;
   }
-  var addToDeck = dispatch.bind(null, { type: type, payload: card.guid });
+  var addToDeck;
+  if (used < card.limit) {
+    addToDeck = dispatch.bind(null, { type: `ADD_${type}`, payload: card.guid });
+  } else {
+    addToDeck = dispatch.bind(null, { type: `RESET_${type}`, payload: card.guid });
+  }
   var toggleDetails;
   if (card.expanded) {
     toggleDetails = dispatch.bind(null, { type: 'COLLAPSE_CARD', payload: card.guid });
