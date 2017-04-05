@@ -9,6 +9,15 @@ var Immutable = require('seamless-immutable');
 
 var Notify = require('pull-notify');
 
+var pl = require('pull-level');
+var levelup = require('levelup');
+var leveljs = require('level-js');
+
+var db = levelup('vs-db', { db: leveljs, valueEncoding: 'json' });
+
+var map = require('collection-map');
+var reduce = require('object.reduce');
+
 var navbarMount = require('./navbar.app');
 
 var navbarEl = document.querySelector('.navbar');
@@ -30,9 +39,11 @@ function init() {
       pt: {},
       equipment: {},
       token: {},
-      cards: data
+      cards: Immutable.asObject(data, function(card) {
+        return [card.guid, card];
+      })
     }),
-    effect: 'ATTACH_TABS'
+    effect: 'INIT_APP'
   };
 }
 
@@ -41,103 +52,76 @@ function increment(count) {
   return count + 1;
 }
 
-function find(arr, fn) {
-  return arr.reduce(function(res, val) {
-    if (res) {
-      return res;
-    }
-
-    var check = fn(val);
-
-    if (check) {
-      res = check;
-    }
-
-    return res;
-  });
-}
-
 function update(model, action) {
   var updated;
 
   switch(action.type) {
+    // Load data
+    case 'LOAD_DECK': {
+      updated = Immutable.merge(model, action.payload, { deep: true });
+      return { model: updated };
+    }
     // MC
     case 'ADD_MC': {
       updated = Immutable.updateIn(model, ['mc', action.payload], increment);
-      return { model: updated };
+      return { model: updated, effect: 'SAVE_DECK' };
     }
     case 'RESET_MC': {
       updated = Immutable.setIn(model, ['mc', action.payload], undefined);
-      return { model: updated };
+      return { model: updated, effect: 'SAVE_DECK' };
     }
     // Location
     case 'ADD_LOCATION': {
       updated = Immutable.updateIn(model, ['location', action.payload], increment);
-      return { model: updated };
+      return { model: updated, effect: 'SAVE_DECK' };
     }
     case 'RESET_LOCATION': {
       updated = Immutable.setIn(model, ['location', action.payload], undefined);
-      return { model: updated };
+      return { model: updated, effect: 'SAVE_DECK' };
     }
     // SC
     case 'ADD_SC': {
       updated = Immutable.updateIn(model, ['sc', action.payload], increment);
-      return { model: updated };
+      return { model: updated, effect: 'SAVE_DECK' };
     }
     case 'RESET_SC': {
       updated = Immutable.setIn(model, ['sc', action.payload], undefined);
-      return { model: updated };
+      return { model: updated, effect: 'SAVE_DECK' };
     }
     // PT
     case 'ADD_PT': {
       updated = Immutable.updateIn(model, ['pt', action.payload], increment);
-      return { model: updated };
+      return { model: updated, effect: 'SAVE_DECK' };
     }
     case 'RESET_PT': {
       updated = Immutable.setIn(model, ['pt', action.payload], undefined);
-      return { model: updated };
+      return { model: updated, effect: 'SAVE_DECK' };
     }
     // Equipment
     case 'ADD_EQUIPMENT': {
       updated = Immutable.updateIn(model, ['equipment', action.payload], increment);
-      return { model: updated };
+      return { model: updated, effect: 'SAVE_DECK' };
     }
     case 'RESET_EQUIPMENT': {
       updated = Immutable.setIn(model, ['equipment', action.payload], undefined);
-      return { model: updated };
+      return { model: updated, effect: 'SAVE_DECK' };
     }
     // Token
     case 'ADD_TOKEN': {
       updated = Immutable.updateIn(model, ['token', action.payload], increment);
-      return { model: updated };
+      return { model: updated, effect: 'SAVE_DECK' };
     }
     case 'RESET_TOKEN': {
       updated = Immutable.setIn(model, ['token', action.payload], undefined);
-      return { model: updated };
+      return { model: updated, effect: 'SAVE_DECK' };
     }
     // UI stuff
     case 'EXPAND_CARD': {
-      updated = Immutable.update(model, 'cards', function(cards) {
-        return cards.map(function(card) {
-          if (card.guid === action.payload) {
-            return Immutable.set(card, 'expanded', true);
-          } else {
-            return card;
-          }
-        });
-      });
+      updated = Immutable.setIn(model, ['cards', action.payload, 'expanded'], true);
       return { model: updated };
     }
     case 'COLLAPSE_CARD': {
-      updated = Immutable.update(model, 'cards', function(cards) {
-        return cards.map(function(card) {
-          if (card.guid === action.payload) {
-            return Immutable.set(card, 'expanded', false);
-          } else {
-            return card;
-          }
-        });
-      });
+      updated = Immutable.setIn(model, ['cards', action.payload, 'expanded'], false);
       return { model: updated };
     }
     default: {
@@ -147,7 +131,7 @@ function update(model, action) {
 }
 
 function cardListPane(model, dispatch) {
-  var cards = model.cards.asMutable({ deep: true }).map(function(card) {
+  var cards = map(model.cards, function(card) {
     return cardView(card, model, dispatch);
   });
 
@@ -287,11 +271,190 @@ function cardView(card, model, dispatch) {
   `;
 }
 
+function count(obj) {
+  return reduce(obj, function(res, val) {
+    val = val || 0;
+    res += val;
+    return res;
+  }, 0);
+}
+
+function header(title, amount) {
+  return html`<div id=${title} className="${classes.listItemHeader}">${title} (${amount})</div>`
+}
+
+function mcView(model, dispatch) {
+  var amount = count(model.mc);
+  if (!amount) {
+    return;
+  }
+
+  var cards = map(model.mc, function(amt, guid) {
+    if (!amt) {
+      return;
+    }
+
+    var card = Immutable.getIn(model, ['cards', guid]);
+
+    var out = cardView(card, model, dispatch);
+
+    out.id = `deck-list-${out.id}`;
+
+    return out;
+  });
+
+  return [
+    header('Main Character', amount),
+    cards
+  ];
+}
+
+function locationView(model, dispatch) {
+  var amount = count(model.location);
+  if (!amount) {
+    return;
+  }
+
+  var cards = map(model.location, function(amt, guid) {
+    if (!amt) {
+      return;
+    }
+
+    var card = Immutable.getIn(model, ['cards', guid]);
+
+    var out = cardView(card, model, dispatch);
+
+    out.id = `deck-list-${out.id}`;
+
+    return out;
+  });
+
+  return [
+    header('Locations', amount),
+    cards
+  ];
+}
+
+function equipmentView(model, dispatch) {
+  var amount = count(model.equipment);
+  if (!amount) {
+    return;
+  }
+
+  var cards = map(model.equipment, function(amt, guid) {
+    if (!amt) {
+      return;
+    }
+
+    var card = Immutable.getIn(model, ['cards', guid]);
+
+    var out = cardView(card, model, dispatch);
+
+    out.id = `deck-list-${out.id}`;
+
+    return out;
+  });
+
+  return [
+    header('Equipment', amount),
+    cards
+  ];
+}
+
+function ptView(model, dispatch) {
+  var amount = count(model.pt);
+  if (!amount) {
+    return;
+  }
+
+  var cards = map(model.pt, function(amt, guid) {
+    if (!amt) {
+      return;
+    }
+
+    var card = Immutable.getIn(model, ['cards', guid]);
+
+    var out = cardView(card, model, dispatch);
+
+    out.id = `deck-list-${out.id}`;
+
+    return out;
+  });
+
+  return [
+    header('Plot Twists', amount),
+    cards
+  ];
+}
+
+function scView(model, dispatch) {
+  var amount = count(model.sc);
+  if (!amount) {
+    return;
+  }
+
+  var cards = map(model.sc, function(amt, guid) {
+    if (!amt) {
+      return;
+    }
+
+    var card = Immutable.getIn(model, ['cards', guid]);
+
+    var out = cardView(card, model, dispatch);
+
+    out.id = `deck-list-${out.id}`;
+
+    return out;
+  });
+
+  return [
+    header('Supporting Characters', amount),
+    cards
+  ];
+}
+
+function tokenView(model, dispatch) {
+  var amount = count(model.token);
+  if (!amount) {
+    return;
+  }
+
+  var cards = map(model.token, function(amt, guid) {
+    if (!amt) {
+      return;
+    }
+
+    var card = Immutable.getIn(model, ['cards', guid]);
+
+    var out = cardView(card, model, dispatch);
+
+    out.id = `deck-list-${out.id}`;
+
+    return out;
+  });
+
+  return [
+    header('Tokens', amount),
+    cards
+  ];
+}
+
+function deckListPane(model, dispatch) {
+  return html`<div id="deck-list-pane" className="pane">
+    ${mcView(model, dispatch)}
+    ${locationView(model, dispatch)}
+    ${equipmentView(model, dispatch)}
+    ${ptView(model, dispatch)}
+    ${scView(model, dispatch)}
+    ${tokenView(model, dispatch)}
+  </div>`;
+}
+
 function view(model, dispatch) {
   return html`
     <div class="pane-container">
       ${cardListPane(model, dispatch)}
-      <div class="pane">Pane 2</div>
+      ${deckListPane(model, dispatch)}
     </div>
   `;
 }
@@ -299,12 +462,36 @@ function view(model, dispatch) {
 
 function run(effect, sources) {
   switch(effect) {
-    case 'ATTACH_TABS': {
+    case 'INIT_APP': {
       console.log('attach tabs');
       var notify = Notify();
       var tabEE = attach(paneContainerEl);
       tabEE.on('tab-shown', notify);
       navbarMount(navbarEl, notify.listen);
+
+      return pull(
+        pl.read(db),
+        pull.map(function (row) {
+          return {
+            type: 'LOAD_DECK',
+            payload: row.value
+          }
+        })
+      );
+    }
+    case 'SAVE_DECK': {
+      console.log(sources);
+      return pull(
+        sources.models(),
+        pull.map(function(model) {
+          return {
+            key: 0,
+            value: Immutable.without(model, 'cards')
+          };
+        }),
+        // Broken impl needs windowSize
+        pl.write(db, { windowSize: 0 })
+      )
     }
   }
 }
@@ -320,7 +507,7 @@ var sources = start(app);
 
 function render(view) {
   console.log('render');
-  html.update(paneContainerEl, view);
+  html.update(paneContainerEl, view, { childrenOnly: true });
 }
 
 pull(

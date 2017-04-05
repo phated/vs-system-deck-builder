@@ -4,6 +4,14 @@ var cxs = require('cxs').default;
 
 var lightgray = '#d3d3d3';
 
+var listItemHeader = cxs({
+  fontWeight: 700,
+  textAlign: 'center',
+  padding: '10px',
+  fontSize: '1.1rem',
+  borderBottom: '1px solid #d3d3d3'
+});
+
 var listItem = cxs({
   boxSizing: 'border-box',
   display: 'flex',
@@ -74,6 +82,7 @@ var visuallyhidden = cxs({
 module.exports = {
   addToDeckButton: addToDeckButton,
   visuallyhidden: visuallyhidden,
+  listItemHeader: listItemHeader,
   listItem: listItem,
   cardThumbnail: cardThumbnail,
   cardDetails: cardDetails,
