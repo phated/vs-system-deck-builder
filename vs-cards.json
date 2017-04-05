@@ -1,9 +1,10 @@
-{
-  "1": {
+[
+  {
     "cardid": 1,
     "name": "Captain Marvel",
     "col": "",
     "type": "Main Character L1",
+    "limit": 1,
     "no": 1,
     "set": "aff",
     "rarity": "",
@@ -25,11 +26,12 @@
       "2"
     ]
   },
-  "2": {
+  {
     "cardid": 2,
     "name": "Captain Marvel",
     "col": "",
     "type": "Main Character L2",
+    "limit": 1,
     "no": 2,
     "set": "aff",
     "rarity": "",
@@ -51,11 +53,12 @@
       "1"
     ]
   },
-  "3": {
+  {
     "cardid": 3,
     "name": "She-Hulk",
     "col": "",
     "type": "Main Character L1",
+    "limit": 1,
     "no": 3,
     "set": "aff",
     "rarity": "",
@@ -76,11 +79,12 @@
       "4"
     ]
   },
-  "4": {
+  {
     "cardid": 4,
     "name": "She-Hulk",
     "col": "",
     "type": "Main Character L2",
+    "limit": 1,
     "no": 4,
     "set": "aff",
     "rarity": "",
@@ -101,11 +105,12 @@
       "3"
     ]
   },
-  "5": {
+  {
     "cardid": 5,
     "name": "Sister Grimm",
     "col": "",
     "type": "Main Character L1",
+    "limit": 1,
     "no": 5,
     "set": "aff",
     "rarity": "",
@@ -127,11 +132,12 @@
       "6"
     ]
   },
-  "6": {
+  {
     "cardid": 6,
     "name": "Sister Grimm",
     "col": "",
     "type": "Main Character L2",
+    "limit": 1,
     "no": 6,
     "set": "aff",
     "rarity": "",
@@ -153,11 +159,12 @@
       "5"
     ]
   },
-  "7": {
+  {
     "cardid": 7,
     "name": "Phoenix",
     "col": "",
     "type": "Main Character L1",
+    "limit": 1,
     "no": 7,
     "set": "aff",
     "rarity": "",
@@ -179,11 +186,12 @@
       "8"
     ]
   },
-  "8": {
+  {
     "cardid": 8,
     "name": "Phoenix",
     "col": "",
     "type": "Main Character L2",
+    "limit": 1,
     "no": 8,
     "set": "aff",
     "rarity": "",
@@ -205,11 +213,12 @@
       "7"
     ]
   },
-  "9": {
+  {
     "cardid": 9,
     "name": "Wasp",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 9,
     "set": "aff",
     "rarity": "",
@@ -229,11 +238,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "10": {
+  {
     "cardid": 10,
     "name": "Sister Grimm",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 10,
     "set": "aff",
     "rarity": "",
@@ -253,11 +263,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "11": {
+  {
     "cardid": 11,
     "name": "Pixie",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 11,
     "set": "aff",
     "rarity": "",
@@ -277,11 +288,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "12": {
+  {
     "cardid": 12,
     "name": "Spider-Woman",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 12,
     "set": "aff",
     "rarity": "",
@@ -301,11 +313,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "13": {
+  {
     "cardid": 13,
     "name": "Meggan",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 13,
     "set": "aff",
     "rarity": "",
@@ -325,11 +338,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "14": {
+  {
     "cardid": 14,
     "name": "Medusa",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 14,
     "set": "aff",
     "rarity": "",
@@ -348,11 +362,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "15": {
+  {
     "cardid": 15,
     "name": "Singularity",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 15,
     "set": "aff",
     "rarity": "",
@@ -372,11 +387,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "16": {
+  {
     "cardid": 16,
     "name": "Dazzler",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 16,
     "set": "aff",
     "rarity": "",
@@ -396,11 +412,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "17": {
+  {
     "cardid": 17,
     "name": "She-Hulk",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 17,
     "set": "aff",
     "rarity": "",
@@ -419,11 +436,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "18": {
+  {
     "cardid": 18,
     "name": "Spectrum",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 18,
     "set": "aff",
     "rarity": "",
@@ -443,11 +461,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "19": {
+  {
     "cardid": 19,
     "name": "Miss America",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 19,
     "set": "aff",
     "rarity": "",
@@ -467,11 +486,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "20": {
+  {
     "cardid": 20,
     "name": "Loki",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 20,
     "set": "aff",
     "rarity": "",
@@ -490,11 +510,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "21": {
+  {
     "cardid": 21,
     "name": "Rogue",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 21,
     "set": "aff",
     "rarity": "",
@@ -514,11 +535,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "22": {
+  {
     "cardid": 22,
     "name": "Phoenix",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 22,
     "set": "aff",
     "rarity": "",
@@ -538,11 +560,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "23": {
+  {
     "cardid": 23,
     "name": "Heroines of Arcadia",
     "col": "",
     "type": "Plot twist",
+    "limit": 4,
     "no": 23,
     "set": "aff",
     "rarity": "",
@@ -557,11 +580,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "24": {
+  {
     "cardid": 24,
     "name": "You Won't Like Her When She's Angry",
     "col": "",
     "type": "Plot twist",
+    "limit": 4,
     "no": 24,
     "set": "aff",
     "rarity": "",
@@ -576,11 +600,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "25": {
+  {
     "cardid": 25,
     "name": "Build a Better World",
     "col": "",
     "type": "Plot twist",
+    "limit": 4,
     "no": 25,
     "set": "aff",
     "rarity": "",
@@ -595,11 +620,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "26": {
+  {
     "cardid": 26,
     "name": "Arcadia",
     "col": "",
     "type": "Special Location",
+    "limit": 4,
     "no": 26,
     "set": "aff",
     "rarity": "",
@@ -614,11 +640,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "27": {
+  {
     "cardid": 27,
     "name": "Black Cat",
     "col": "",
     "type": "Main Character L1",
+    "limit": 1,
     "no": 27,
     "set": "aff",
     "rarity": "",
@@ -639,11 +666,12 @@
       "28"
     ]
   },
-  "28": {
+  {
     "cardid": 28,
     "name": "Black Cat",
     "col": "",
     "type": "Main Character L2",
+    "limit": 1,
     "no": 28,
     "set": "aff",
     "rarity": "",
@@ -664,11 +692,12 @@
       "27"
     ]
   },
-  "29": {
+  {
     "cardid": 29,
     "name": "Dark Phoenix",
     "col": "",
     "type": "Main Character L1",
+    "limit": 1,
     "no": 29,
     "set": "aff",
     "rarity": "",
@@ -690,11 +719,12 @@
       "30"
     ]
   },
-  "30": {
+  {
     "cardid": 30,
     "name": "Dark Phoenix",
     "col": "",
     "type": "Main Character L2",
+    "limit": 1,
     "no": 30,
     "set": "aff",
     "rarity": "",
@@ -716,11 +746,12 @@
       "29"
     ]
   },
-  "31": {
+  {
     "cardid": 31,
     "name": "Enchantress",
     "col": "",
     "type": "Main Character L1",
+    "limit": 1,
     "no": 31,
     "set": "aff",
     "rarity": "",
@@ -742,11 +773,12 @@
       "32"
     ]
   },
-  "32": {
+  {
     "cardid": 32,
     "name": "Enchantress",
     "col": "",
     "type": "Main Character L2",
+    "limit": 1,
     "no": 32,
     "set": "aff",
     "rarity": "",
@@ -768,11 +800,12 @@
       "31"
     ]
   },
-  "33": {
+  {
     "cardid": 33,
     "name": "Mystique",
     "col": "",
     "type": "Main Character L1",
+    "limit": 1,
     "no": 33,
     "set": "aff",
     "rarity": "",
@@ -793,11 +826,12 @@
       "34"
     ]
   },
-  "34": {
+  {
     "cardid": 34,
     "name": "Mystique",
     "col": "",
     "type": "Main Character L2",
+    "limit": 1,
     "no": 34,
     "set": "aff",
     "rarity": "",
@@ -818,11 +852,12 @@
       "33"
     ]
   },
-  "35": {
+  {
     "cardid": 35,
     "name": "Black Cat",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 35,
     "set": "aff",
     "rarity": "",
@@ -841,11 +876,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "36": {
+  {
     "cardid": 36,
     "name": "Madame Masque",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 36,
     "set": "aff",
     "rarity": "",
@@ -865,11 +901,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "37": {
+  {
     "cardid": 37,
     "name": "Titania",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 37,
     "set": "aff",
     "rarity": "",
@@ -888,11 +925,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "38": {
+  {
     "cardid": 38,
     "name": "Sin",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 38,
     "set": "aff",
     "rarity": "",
@@ -912,11 +950,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "39": {
+  {
     "cardid": 39,
     "name": "Moonstone",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 39,
     "set": "aff",
     "rarity": "",
@@ -936,11 +975,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "40": {
+  {
     "cardid": 40,
     "name": "Silver Sable",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 40,
     "set": "aff",
     "rarity": "",
@@ -960,11 +1000,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "41": {
+  {
     "cardid": 41,
     "name": "Nebula",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 41,
     "set": "aff",
     "rarity": "",
@@ -983,11 +1024,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "42": {
+  {
     "cardid": 42,
     "name": "Goblin Queen",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 42,
     "set": "aff",
     "rarity": "",
@@ -1007,11 +1049,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "43": {
+  {
     "cardid": 43,
     "name": "Spiral",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 43,
     "set": "aff",
     "rarity": "",
@@ -1030,11 +1073,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "44": {
+  {
     "cardid": 44,
     "name": "Viper",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 44,
     "set": "aff",
     "rarity": "",
@@ -1054,11 +1098,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "45": {
+  {
     "cardid": 45,
     "name": "Satana",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 45,
     "set": "aff",
     "rarity": "",
@@ -1078,11 +1123,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "46": {
+  {
     "cardid": 46,
     "name": "Lady Deathstrike",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 46,
     "set": "aff",
     "rarity": "",
@@ -1101,11 +1147,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "47": {
+  {
     "cardid": 47,
     "name": "Morgan le Fay",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 47,
     "set": "aff",
     "rarity": "",
@@ -1125,11 +1172,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "48": {
+  {
     "cardid": 48,
     "name": "Enchantress",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 48,
     "set": "aff",
     "rarity": "",
@@ -1149,11 +1197,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "49": {
+  {
     "cardid": 49,
     "name": "Femme Fatality",
     "col": "",
     "type": "Plot twist",
+    "limit": 4,
     "no": 49,
     "set": "aff",
     "rarity": "",
@@ -1168,11 +1217,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "50": {
+  {
     "cardid": 50,
     "name": "Dramatic Entrance",
     "col": "",
     "type": "Plot twist",
+    "limit": 4,
     "no": 50,
     "set": "aff",
     "rarity": "",
@@ -1187,11 +1237,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "51": {
+  {
     "cardid": 51,
     "name": "Cat Fight",
     "col": "",
     "type": "Plot twist",
+    "limit": 4,
     "no": 51,
     "set": "aff",
     "rarity": "",
@@ -1206,11 +1257,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "52": {
+  {
     "cardid": 52,
     "name": "Madripoor",
     "col": "",
     "type": "Special Location",
+    "limit": 4,
     "no": 52,
     "set": "aff",
     "rarity": "",
@@ -1225,11 +1277,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "53": {
+  {
     "cardid": 53,
     "name": "Main Strength",
     "col": "",
     "type": "Plot twist",
+    "limit": 4,
     "no": 53,
     "set": "aff",
     "rarity": "",
@@ -1244,11 +1297,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "54": {
+  {
     "cardid": 54,
     "name": "Demon Goblin",
     "col": "",
     "type": "",
+    "limit": 4,
     "no": 54,
     "set": "aff",
     "rarity": "",
@@ -1267,11 +1321,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "55": {
+  {
     "cardid": 55,
     "name": "Daredevil",
     "col": "",
     "type": "Main Character L1",
+    "limit": 1,
     "no": 1,
     "set": "def",
     "rarity": "",
@@ -1292,11 +1347,12 @@
       "56"
     ]
   },
-  "56": {
+  {
     "cardid": 56,
     "name": "Daredevil",
     "col": "",
     "type": "Main Character L2",
+    "limit": 1,
     "no": 2,
     "set": "def",
     "rarity": "",
@@ -1317,11 +1373,12 @@
       "55"
     ]
   },
-  "57": {
+  {
     "cardid": 57,
     "name": "Dr. Strange",
     "col": "",
     "type": "Main Character L1",
+    "limit": 1,
     "no": 3,
     "set": "def",
     "rarity": "",
@@ -1343,11 +1400,12 @@
       "58"
     ]
   },
-  "58": {
+  {
     "cardid": 58,
     "name": "Dr. Strange",
     "col": "",
     "type": "Main Character L2",
+    "limit": 1,
     "no": 4,
     "set": "def",
     "rarity": "",
@@ -1369,11 +1427,12 @@
       "57"
     ]
   },
-  "59": {
+  {
     "cardid": 59,
     "name": "Ghost Rider",
     "col": "",
     "type": "Main Character L1",
+    "limit": 1,
     "no": 5,
     "set": "def",
     "rarity": "",
@@ -1394,11 +1453,12 @@
       "60"
     ]
   },
-  "60": {
+  {
     "cardid": 60,
     "name": "Ghost Rider",
     "col": "",
     "type": "Main Character L2",
+    "limit": 1,
     "no": 6,
     "set": "def",
     "rarity": "",
@@ -1419,11 +1479,12 @@
       "59"
     ]
   },
-  "61": {
+  {
     "cardid": 61,
     "name": "Luke Cage",
     "col": "",
     "type": "Main Character L1",
+    "limit": 1,
     "no": 7,
     "set": "def",
     "rarity": "",
@@ -1444,11 +1505,12 @@
       "62"
     ]
   },
-  "62": {
+  {
     "cardid": 62,
     "name": "Luke Cage",
     "col": "",
     "type": "Main Character L2",
+    "limit": 1,
     "no": 8,
     "set": "def",
     "rarity": "",
@@ -1469,11 +1531,12 @@
       "61"
     ]
   },
-  "63": {
+  {
     "cardid": 63,
     "name": "Angel",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 9,
     "set": "def",
     "rarity": "",
@@ -1493,11 +1556,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "64": {
+  {
     "cardid": 64,
     "name": "Hellcat",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 10,
     "set": "def",
     "rarity": "",
@@ -1516,11 +1580,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "65": {
+  {
     "cardid": 65,
     "name": "Dagger",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 11,
     "set": "def",
     "rarity": "",
@@ -1540,11 +1605,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "66": {
+  {
     "cardid": 66,
     "name": "Iron Fist",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 12,
     "set": "def",
     "rarity": "",
@@ -1563,11 +1629,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "67": {
+  {
     "cardid": 67,
     "name": "Scarlet Witch",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 13,
     "set": "def",
     "rarity": "",
@@ -1587,11 +1654,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "68": {
+  {
     "cardid": 68,
     "name": "Cloak",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 14,
     "set": "def",
     "rarity": "",
@@ -1610,11 +1678,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "69": {
+  {
     "cardid": 69,
     "name": "Deathlok",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 15,
     "set": "def",
     "rarity": "",
@@ -1634,11 +1703,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "70": {
+  {
     "cardid": 70,
     "name": "Moon Knight",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 16,
     "set": "def",
     "rarity": "",
@@ -1657,11 +1727,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "71": {
+  {
     "cardid": 71,
     "name": "Nighthawk",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 17,
     "set": "def",
     "rarity": "",
@@ -1681,11 +1752,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "72": {
+  {
     "cardid": 72,
     "name": "Punisher",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 18,
     "set": "def",
     "rarity": "",
@@ -1705,11 +1777,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "73": {
+  {
     "cardid": 73,
     "name": "Vision",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 19,
     "set": "def",
     "rarity": "",
@@ -1729,11 +1802,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "74": {
+  {
     "cardid": 74,
     "name": "Valkyrie",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 20,
     "set": "def",
     "rarity": "",
@@ -1753,11 +1827,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "75": {
+  {
     "cardid": 75,
     "name": "War Machine",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 21,
     "set": "def",
     "rarity": "",
@@ -1777,11 +1852,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "76": {
+  {
     "cardid": 76,
     "name": "Ghost Rider",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 22,
     "set": "def",
     "rarity": "",
@@ -1800,11 +1876,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "77": {
+  {
     "cardid": 77,
     "name": "Spellbound",
     "col": "",
     "type": "Plot twist",
+    "limit": 4,
     "no": 23,
     "set": "def",
     "rarity": "",
@@ -1819,11 +1896,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "78": {
+  {
     "cardid": 78,
     "name": "Hidden Weapons",
     "col": "",
     "type": "Plot twist",
+    "limit": 4,
     "no": 24,
     "set": "def",
     "rarity": "",
@@ -1838,11 +1916,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "79": {
+  {
     "cardid": 79,
     "name": "Super Senses",
     "col": "",
     "type": "Plot twist",
+    "limit": 4,
     "no": 25,
     "set": "def",
     "rarity": "",
@@ -1857,11 +1936,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "80": {
+  {
     "cardid": 80,
     "name": "Sanctum Sanctorum",
     "col": "",
     "type": "Special Location",
+    "limit": 4,
     "no": 26,
     "set": "def",
     "rarity": "",
@@ -1876,11 +1956,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "81": {
+  {
     "cardid": 81,
     "name": "Bullseye",
     "col": "",
     "type": "Main Character L1",
+    "limit": 1,
     "no": 27,
     "set": "def",
     "rarity": "",
@@ -1902,11 +1983,12 @@
       "82"
     ]
   },
-  "82": {
+  {
     "cardid": 82,
     "name": "Bullseye",
     "col": "",
     "type": "Main Character L2",
+    "limit": 1,
     "no": 28,
     "set": "def",
     "rarity": "",
@@ -1928,11 +2010,12 @@
       "81"
     ]
   },
-  "83": {
+  {
     "cardid": 83,
     "name": "Kingpin",
     "col": "",
     "type": "Main Character L1",
+    "limit": 1,
     "no": 29,
     "set": "def",
     "rarity": "",
@@ -1953,11 +2036,12 @@
       "84"
     ]
   },
-  "84": {
+  {
     "cardid": 84,
     "name": "Kingpin",
     "col": "",
     "type": "Main Character L2",
+    "limit": 1,
     "no": 30,
     "set": "def",
     "rarity": "",
@@ -1978,11 +2062,12 @@
       "83"
     ]
   },
-  "85": {
+  {
     "cardid": 85,
     "name": "Venom",
     "col": "",
     "type": "Main Character L1",
+    "limit": 1,
     "no": 31,
     "set": "def",
     "rarity": "",
@@ -2003,11 +2088,12 @@
       "86"
     ]
   },
-  "86": {
+  {
     "cardid": 86,
     "name": "Venom",
     "col": "",
     "type": "Main Character L2",
+    "limit": 1,
     "no": 32,
     "set": "def",
     "rarity": "",
@@ -2028,11 +2114,12 @@
       "85"
     ]
   },
-  "87": {
+  {
     "cardid": 87,
     "name": "Winter Soldier",
     "col": "",
     "type": "Main Character L1",
+    "limit": 1,
     "no": 33,
     "set": "def",
     "rarity": "",
@@ -2054,11 +2141,12 @@
       "88"
     ]
   },
-  "88": {
+  {
     "cardid": 88,
     "name": "Winter Soldier",
     "col": "",
     "type": "Main Character L2",
+    "limit": 1,
     "no": 34,
     "set": "def",
     "rarity": "",
@@ -2080,11 +2168,12 @@
       "87"
     ]
   },
-  "89": {
+  {
     "cardid": 89,
     "name": "Carnage",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 35,
     "set": "def",
     "rarity": "",
@@ -2103,11 +2192,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "90": {
+  {
     "cardid": 90,
     "name": "Helmut Zemo",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 36,
     "set": "def",
     "rarity": "",
@@ -2127,11 +2217,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "91": {
+  {
     "cardid": 91,
     "name": "Electro",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 37,
     "set": "def",
     "rarity": "",
@@ -2151,11 +2242,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "92": {
+  {
     "cardid": 92,
     "name": "Mary Walker",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 38,
     "set": "def",
     "rarity": "",
@@ -2174,11 +2266,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "93": {
+  {
     "cardid": 93,
     "name": "Mary Walker",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 38,
     "set": "def",
     "rarity": "",
@@ -2197,11 +2290,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "94": {
+  {
     "cardid": 94,
     "name": "Mary Walker",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 38,
     "set": "def",
     "rarity": "",
@@ -2220,11 +2314,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "95": {
+  {
     "cardid": 95,
     "name": "Mary Walker",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 38,
     "set": "def",
     "rarity": "",
@@ -2243,11 +2338,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "96": {
+  {
     "cardid": 96,
     "name": "Rhino",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 39,
     "set": "def",
     "rarity": "",
@@ -2266,11 +2362,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "97": {
+  {
     "cardid": 97,
     "name": "Hellstrom",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 40,
     "set": "def",
     "rarity": "",
@@ -2290,11 +2387,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "98": {
+  {
     "cardid": 98,
     "name": "Winter Soldier",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 41,
     "set": "def",
     "rarity": "",
@@ -2314,11 +2412,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "99": {
+  {
     "cardid": 99,
     "name": "M.O.D.O.K.",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 42,
     "set": "def",
     "rarity": "",
@@ -2338,11 +2437,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "100": {
+  {
     "cardid": 100,
     "name": "Venom",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 43,
     "set": "def",
     "rarity": "",
@@ -2361,11 +2461,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "101": {
+  {
     "cardid": 101,
     "name": "Bullseye",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 44,
     "set": "def",
     "rarity": "",
@@ -2385,11 +2486,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "102": {
+  {
     "cardid": 102,
     "name": "Purple Man",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 45,
     "set": "def",
     "rarity": "",
@@ -2408,11 +2510,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "103": {
+  {
     "cardid": 103,
     "name": "Baron Mordo",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 46,
     "set": "def",
     "rarity": "",
@@ -2432,11 +2535,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "104": {
+  {
     "cardid": 104,
     "name": "Iron Man",
     "col": "",
     "type": "Main Character L2",
+    "limit": 1,
     "no": 6,
     "set": "mnb",
     "rarity": "",
@@ -2458,11 +2562,12 @@
       "278"
     ]
   },
-  "105": {
+  {
     "cardid": 105,
     "name": "Spider Man",
     "col": "",
     "type": "Main Character L1",
+    "limit": 1,
     "no": 7,
     "set": "mnb",
     "rarity": "",
@@ -2483,11 +2588,12 @@
       "106"
     ]
   },
-  "106": {
+  {
     "cardid": 106,
     "name": "Spider Man",
     "col": "",
     "type": "Main Character L2",
+    "limit": 1,
     "no": 8,
     "set": "mnb",
     "rarity": "",
@@ -2508,11 +2614,12 @@
       "105"
     ]
   },
-  "107": {
+  {
     "cardid": 107,
     "name": "Ant Man",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 9,
     "set": "mnb",
     "rarity": "",
@@ -2531,11 +2638,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "108": {
+  {
     "cardid": 108,
     "name": "Black Widow",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 10,
     "set": "mnb",
     "rarity": "",
@@ -2555,11 +2663,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "109": {
+  {
     "cardid": 109,
     "name": "Black Panther",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 11,
     "set": "mnb",
     "rarity": "",
@@ -2578,11 +2687,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "110": {
+  {
     "cardid": 110,
     "name": "Daredevil",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 12,
     "set": "mnb",
     "rarity": "",
@@ -2601,11 +2711,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "111": {
+  {
     "cardid": 111,
     "name": "Hawkeye",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 13,
     "set": "mnb",
     "rarity": "",
@@ -2625,11 +2736,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "112": {
+  {
     "cardid": 112,
     "name": "Nick Fury",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 14,
     "set": "mnb",
     "rarity": "",
@@ -2649,11 +2761,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "113": {
+  {
     "cardid": 113,
     "name": "Captain America",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 15,
     "set": "mnb",
     "rarity": "",
@@ -2672,11 +2785,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "114": {
+  {
     "cardid": 114,
     "name": "Spider Man",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 16,
     "set": "mnb",
     "rarity": "",
@@ -2695,11 +2809,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "115": {
+  {
     "cardid": 115,
     "name": "Ms.Marvel",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 17,
     "set": "mnb",
     "rarity": "",
@@ -2719,11 +2834,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "116": {
+  {
     "cardid": 116,
     "name": "Luke Cage",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 18,
     "set": "mnb",
     "rarity": "",
@@ -2742,11 +2858,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "117": {
+  {
     "cardid": 117,
     "name": "Dr. Strange",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 19,
     "set": "mnb",
     "rarity": "",
@@ -2766,11 +2883,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "118": {
+  {
     "cardid": 118,
     "name": "Iron Man",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 20,
     "set": "mnb",
     "rarity": "",
@@ -2790,11 +2908,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "119": {
+  {
     "cardid": 119,
     "name": "Thor",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 21,
     "set": "mnb",
     "rarity": "",
@@ -2814,11 +2933,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "120": {
+  {
     "cardid": 120,
     "name": "Hulk",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 22,
     "set": "mnb",
     "rarity": "",
@@ -2837,11 +2957,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "121": {
+  {
     "cardid": 121,
     "name": "Earth's Mightiest Heroes",
     "col": "",
     "type": "Plot twist",
+    "limit": 4,
     "no": 23,
     "set": "mnb",
     "rarity": "",
@@ -2856,11 +2977,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "122": {
+  {
     "cardid": 122,
     "name": "Think Again",
     "col": "",
     "type": "Plot twist",
+    "limit": 4,
     "no": 24,
     "set": "mnb",
     "rarity": "",
@@ -2875,11 +2997,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "123": {
+  {
     "cardid": 123,
     "name": "Stark Tech",
     "col": "",
     "type": "Plot twist",
+    "limit": 4,
     "no": 25,
     "set": "mnb",
     "rarity": "",
@@ -2894,11 +3017,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "124": {
+  {
     "cardid": 124,
     "name": "Avengers Mansion",
     "col": "",
     "type": "Special Location",
+    "limit": 4,
     "no": 26,
     "set": "mnb",
     "rarity": "",
@@ -2913,11 +3037,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "125": {
+  {
     "cardid": 125,
     "name": "Storm",
     "col": "",
     "type": "Main Character L1",
+    "limit": 1,
     "no": 27,
     "set": "mnb",
     "rarity": "",
@@ -2939,11 +3064,12 @@
       "126"
     ]
   },
-  "126": {
+  {
     "cardid": 126,
     "name": "Storm",
     "col": "",
     "type": "Main Character L2",
+    "limit": 1,
     "no": 28,
     "set": "mnb",
     "rarity": "",
@@ -2965,11 +3091,12 @@
       "125"
     ]
   },
-  "127": {
+  {
     "cardid": 127,
     "name": "Wolverine",
     "col": "",
     "type": "Main Character L1",
+    "limit": 1,
     "no": 29,
     "set": "mnb",
     "rarity": "",
@@ -2990,11 +3117,12 @@
       "128"
     ]
   },
-  "128": {
+  {
     "cardid": 128,
     "name": "Wolverine",
     "col": "",
     "type": "Main Character L2",
+    "limit": 1,
     "no": 30,
     "set": "mnb",
     "rarity": "",
@@ -3015,11 +3143,12 @@
       "127"
     ]
   },
-  "129": {
+  {
     "cardid": 129,
     "name": "Deadpool",
     "col": "",
     "type": "Main Character L1",
+    "limit": 1,
     "no": 31,
     "set": "mnb",
     "rarity": "",
@@ -3041,11 +3170,12 @@
       "130"
     ]
   },
-  "130": {
+  {
     "cardid": 130,
     "name": "Deadpool",
     "col": "",
     "type": "Main Character L2",
+    "limit": 1,
     "no": 32,
     "set": "mnb",
     "rarity": "",
@@ -3067,11 +3197,12 @@
       "129"
     ]
   },
-  "131": {
+  {
     "cardid": 131,
     "name": "Professor X",
     "col": "",
     "type": "Main Character L1",
+    "limit": 1,
     "no": 33,
     "set": "mnb",
     "rarity": "",
@@ -3093,11 +3224,12 @@
       "132"
     ]
   },
-  "132": {
+  {
     "cardid": 132,
     "name": "Professor X",
     "col": "",
     "type": "Main Character L2",
+    "limit": 1,
     "no": 34,
     "set": "mnb",
     "rarity": "",
@@ -3119,11 +3251,12 @@
       "131"
     ]
   },
-  "133": {
+  {
     "cardid": 133,
     "name": "Iceman",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 35,
     "set": "mnb",
     "rarity": "",
@@ -3143,11 +3276,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "134": {
+  {
     "cardid": 134,
     "name": "Magik",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 36,
     "set": "mnb",
     "rarity": "",
@@ -3166,11 +3300,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "135": {
+  {
     "cardid": 135,
     "name": "Hope Summers",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 37,
     "set": "mnb",
     "rarity": "",
@@ -3189,11 +3324,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "136": {
+  {
     "cardid": 136,
     "name": "Cyclops",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 38,
     "set": "mnb",
     "rarity": "",
@@ -3213,11 +3349,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "137": {
+  {
     "cardid": 137,
     "name": "Deadpool",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 39,
     "set": "mnb",
     "rarity": "",
@@ -3237,11 +3374,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "138": {
+  {
     "cardid": 138,
     "name": "Namor",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 40,
     "set": "mnb",
     "rarity": "",
@@ -3261,11 +3399,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "139": {
+  {
     "cardid": 139,
     "name": "Gambit",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 41,
     "set": "mnb",
     "rarity": "",
@@ -3284,11 +3423,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "140": {
+  {
     "cardid": 140,
     "name": "Storm",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 42,
     "set": "mnb",
     "rarity": "",
@@ -3308,11 +3448,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "141": {
+  {
     "cardid": 141,
     "name": "Star-Lord",
     "col": "",
     "type": "Main Character L2",
+    "limit": 1,
     "no": 56,
     "set": "mnb",
     "rarity": "",
@@ -3334,11 +3475,12 @@
       "291"
     ]
   },
-  "142": {
+  {
     "cardid": 142,
     "name": "Gamora",
     "col": "",
     "type": "Main Character L1",
+    "limit": 1,
     "no": 57,
     "set": "mnb",
     "rarity": "",
@@ -3359,11 +3501,12 @@
       "143"
     ]
   },
-  "143": {
+  {
     "cardid": 143,
     "name": "Gamora",
     "col": "",
     "type": "Main Character L2",
+    "limit": 1,
     "no": 58,
     "set": "mnb",
     "rarity": "",
@@ -3384,11 +3527,12 @@
       "142"
     ]
   },
-  "144": {
+  {
     "cardid": 144,
     "name": "Groot",
     "col": "",
     "type": "Main Character L1",
+    "limit": 1,
     "no": 59,
     "set": "mnb",
     "rarity": "",
@@ -3409,11 +3553,12 @@
       "145"
     ]
   },
-  "145": {
+  {
     "cardid": 145,
     "name": "Groot",
     "col": "",
     "type": "Main Character L2",
+    "limit": 1,
     "no": 60,
     "set": "mnb",
     "rarity": "",
@@ -3434,11 +3579,12 @@
       "144"
     ]
   },
-  "146": {
+  {
     "cardid": 146,
     "name": "Cosmo",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 61,
     "set": "mnb",
     "rarity": "",
@@ -3458,11 +3604,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "147": {
+  {
     "cardid": 147,
     "name": "Yondu",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 62,
     "set": "mnb",
     "rarity": "",
@@ -3482,11 +3629,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "148": {
+  {
     "cardid": 148,
     "name": "Major Victory",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 63,
     "set": "mnb",
     "rarity": "",
@@ -3506,11 +3654,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "149": {
+  {
     "cardid": 149,
     "name": "Mantis",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 64,
     "set": "mnb",
     "rarity": "",
@@ -3529,11 +3678,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "150": {
+  {
     "cardid": 150,
     "name": "Agent Venom",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 65,
     "set": "mnb",
     "rarity": "",
@@ -3552,11 +3702,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "151": {
+  {
     "cardid": 151,
     "name": "Rocket",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 66,
     "set": "mnb",
     "rarity": "",
@@ -3576,11 +3727,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "152": {
+  {
     "cardid": 152,
     "name": "Gamora",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 67,
     "set": "mnb",
     "rarity": "",
@@ -3599,11 +3751,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "153": {
+  {
     "cardid": 153,
     "name": "Nova",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 68,
     "set": "mnb",
     "rarity": "",
@@ -3623,11 +3776,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "154": {
+  {
     "cardid": 154,
     "name": "Star-Lord",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 69,
     "set": "mnb",
     "rarity": "",
@@ -3647,11 +3801,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "155": {
+  {
     "cardid": 155,
     "name": "Groot",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 70,
     "set": "mnb",
     "rarity": "",
@@ -3670,11 +3825,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "156": {
+  {
     "cardid": 156,
     "name": "Moondragon",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 71,
     "set": "mnb",
     "rarity": "",
@@ -3694,11 +3850,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "157": {
+  {
     "cardid": 157,
     "name": "Quasar",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 72,
     "set": "mnb",
     "rarity": "",
@@ -3718,11 +3875,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "158": {
+  {
     "cardid": 158,
     "name": "Drax",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 73,
     "set": "mnb",
     "rarity": "",
@@ -3741,11 +3899,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "159": {
+  {
     "cardid": 159,
     "name": "Adam Warlock",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 74,
     "set": "mnb",
     "rarity": "",
@@ -3765,11 +3924,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "160": {
+  {
     "cardid": 160,
     "name": "Vigilante Justice",
     "col": "",
     "type": "Plot twist",
+    "limit": 4,
     "no": 75,
     "set": "mnb",
     "rarity": "",
@@ -3784,11 +3944,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "161": {
+  {
     "cardid": 161,
     "name": "Even The Odds",
     "col": "",
     "type": "Plot twist",
+    "limit": 4,
     "no": 76,
     "set": "mnb",
     "rarity": "",
@@ -3803,11 +3964,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "162": {
+  {
     "cardid": 162,
     "name": "Give 'Em a Lift",
     "col": "",
     "type": "Plot twist",
+    "limit": 4,
     "no": 77,
     "set": "mnb",
     "rarity": "",
@@ -3822,11 +3984,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "163": {
+  {
     "cardid": 163,
     "name": "Knowhere",
     "col": "",
     "type": "Special Location",
+    "limit": 4,
     "no": 78,
     "set": "mnb",
     "rarity": "",
@@ -3841,11 +4004,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "164": {
+  {
     "cardid": 164,
     "name": "Green Goblin",
     "col": "",
     "type": "Main Character L1",
+    "limit": 1,
     "no": 79,
     "set": "mnb",
     "rarity": "",
@@ -3867,11 +4031,12 @@
       "165"
     ]
   },
-  "165": {
+  {
     "cardid": 165,
     "name": "Green Goblin",
     "col": "",
     "type": "Main Character L2",
+    "limit": 1,
     "no": 80,
     "set": "mnb",
     "rarity": "",
@@ -3893,11 +4058,12 @@
       "164"
     ]
   },
-  "166": {
+  {
     "cardid": 166,
     "name": "Loki",
     "col": "",
     "type": "Main Character L1",
+    "limit": 1,
     "no": 81,
     "set": "mnb",
     "rarity": "",
@@ -3918,11 +4084,12 @@
       "256"
     ]
   },
-  "167": {
+  {
     "cardid": 167,
     "name": "Sabretooth",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 92,
     "set": "mnb",
     "rarity": "",
@@ -3941,11 +4108,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "168": {
+  {
     "cardid": 168,
     "name": "Ultron",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 93,
     "set": "mnb",
     "rarity": "",
@@ -3966,11 +4134,12 @@
     "aaprint": 320,
     "notcollectable": 1
   },
-  "169": {
+  {
     "cardid": 169,
     "name": "Abomination",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 94,
     "set": "mnb",
     "rarity": "",
@@ -3989,11 +4158,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "170": {
+  {
     "cardid": 170,
     "name": "Mandarin",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 95,
     "set": "mnb",
     "rarity": "",
@@ -4013,11 +4183,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "171": {
+  {
     "cardid": 171,
     "name": "Juggernaut",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 96,
     "set": "mnb",
     "rarity": "",
@@ -4036,11 +4207,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "172": {
+  {
     "cardid": 172,
     "name": "Magneto",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 97,
     "set": "mnb",
     "rarity": "",
@@ -4060,11 +4232,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "173": {
+  {
     "cardid": 173,
     "name": "Loki",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 98,
     "set": "mnb",
     "rarity": "",
@@ -4083,11 +4256,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "174": {
+  {
     "cardid": 174,
     "name": "Dormammu",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 99,
     "set": "mnb",
     "rarity": "",
@@ -4107,11 +4281,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "175": {
+  {
     "cardid": 175,
     "name": "Thanos",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 100,
     "set": "mnb",
     "rarity": "",
@@ -4130,11 +4305,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "176": {
+  {
     "cardid": 176,
     "name": "Extinguish",
     "col": "",
     "type": "Plot twist",
+    "limit": 4,
     "no": 101,
     "set": "mnb",
     "rarity": "",
@@ -4149,11 +4325,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "177": {
+  {
     "cardid": 177,
     "name": "Metal and Fire",
     "col": "",
     "type": "Plot twist",
+    "limit": 4,
     "no": 102,
     "set": "mnb",
     "rarity": "",
@@ -4168,11 +4345,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "178": {
+  {
     "cardid": 178,
     "name": "Trickster God",
     "col": "",
     "type": "Plot twist",
+    "limit": 4,
     "no": 103,
     "set": "mnb",
     "rarity": "",
@@ -4187,11 +4365,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "179": {
+  {
     "cardid": 179,
     "name": "The Vault",
     "col": "",
     "type": "Special Location",
+    "limit": 4,
     "no": 104,
     "set": "mnb",
     "rarity": "",
@@ -4206,11 +4385,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "180": {
+  {
     "cardid": 180,
     "name": "Open Fire",
     "col": "",
     "type": "Plot twist",
+    "limit": 4,
     "no": 105,
     "set": "mnb",
     "rarity": "",
@@ -4225,11 +4405,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "181": {
+  {
     "cardid": 181,
     "name": "Best Offense Is A Good Defense",
     "col": "",
     "type": "Plot twist",
+    "limit": 4,
     "no": 106,
     "set": "mnb",
     "rarity": "",
@@ -4244,11 +4425,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "182": {
+  {
     "cardid": 182,
     "name": "Savage Surprise",
     "col": "",
     "type": "Plot twist",
+    "limit": 4,
     "no": 107,
     "set": "mnb",
     "rarity": "",
@@ -4263,11 +4445,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "183": {
+  {
     "cardid": 183,
     "name": "Find Cover",
     "col": "",
     "type": "Plot twist",
+    "limit": 4,
     "no": 108,
     "set": "mnb",
     "rarity": "",
@@ -4282,11 +4465,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "184": {
+  {
     "cardid": 184,
     "name": "Training Ground",
     "col": "",
     "type": "Location",
+    "limit": 4,
     "no": 109,
     "set": "mnb",
     "rarity": "",
@@ -4301,11 +4485,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "185": {
+  {
     "cardid": 185,
     "name": "Laboratory",
     "col": "",
     "type": "Location",
+    "limit": 4,
     "no": 110,
     "set": "mnb",
     "rarity": "",
@@ -4320,11 +4505,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "186": {
+  {
     "cardid": 186,
     "name": "Academy",
     "col": "",
     "type": "Location",
+    "limit": 4,
     "no": 111,
     "set": "mnb",
     "rarity": "",
@@ -4339,11 +4525,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "187": {
+  {
     "cardid": 187,
     "name": "Fortress",
     "col": "",
     "type": "Location",
+    "limit": 4,
     "no": 112,
     "set": "mnb",
     "rarity": "",
@@ -4358,11 +4545,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "256": {
+  {
     "cardid": 256,
     "name": "Loki",
     "col": "",
     "type": "Main Character L2",
+    "limit": 1,
     "no": 82,
     "set": "mnb",
     "rarity": "",
@@ -4383,11 +4571,12 @@
       "166"
     ]
   },
-  "257": {
+  {
     "cardid": 257,
     "name": "Magneto",
     "col": "",
     "type": "Main Character L1",
+    "limit": 1,
     "no": 83,
     "set": "mnb",
     "rarity": "",
@@ -4409,11 +4598,12 @@
       "258"
     ]
   },
-  "258": {
+  {
     "cardid": 258,
     "name": "Magneto",
     "col": "",
     "type": "Main Character L2",
+    "limit": 1,
     "no": 84,
     "set": "mnb",
     "rarity": "",
@@ -4435,11 +4625,12 @@
       "257"
     ]
   },
-  "259": {
+  {
     "cardid": 259,
     "name": "Thanos",
     "col": "",
     "type": "Main Character L1",
+    "limit": 1,
     "no": 85,
     "set": "mnb",
     "rarity": "",
@@ -4460,11 +4651,12 @@
       "260"
     ]
   },
-  "260": {
+  {
     "cardid": 260,
     "name": "Thanos",
     "col": "",
     "type": "Main Character L2",
+    "limit": 1,
     "no": 86,
     "set": "mnb",
     "rarity": "",
@@ -4485,11 +4677,12 @@
       "259"
     ]
   },
-  "261": {
+  {
     "cardid": 261,
     "name": "Ronan",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 87,
     "set": "mnb",
     "rarity": "",
@@ -4508,11 +4701,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "262": {
+  {
     "cardid": 262,
     "name": "Mystique",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 88,
     "set": "mnb",
     "rarity": "",
@@ -4531,11 +4725,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "263": {
+  {
     "cardid": 263,
     "name": "Doctor Octopus",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 89,
     "set": "mnb",
     "rarity": "",
@@ -4554,11 +4749,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "264": {
+  {
     "cardid": 264,
     "name": "Green Goblin",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 90,
     "set": "mnb",
     "rarity": "",
@@ -4578,11 +4774,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "265": {
+  {
     "cardid": 265,
     "name": "Red Skull",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 91,
     "set": "mnb",
     "rarity": "",
@@ -4601,11 +4798,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "266": {
+  {
     "cardid": 266,
     "name": "Kingpin",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 47,
     "set": "def",
     "rarity": "",
@@ -4624,11 +4822,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "267": {
+  {
     "cardid": 267,
     "name": "Blackheart",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 48,
     "set": "def",
     "rarity": "",
@@ -4648,11 +4847,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "268": {
+  {
     "cardid": 268,
     "name": "Fair and Balanced",
     "col": "",
     "type": "Plot twist",
+    "limit": 4,
     "no": 49,
     "set": "def",
     "rarity": "",
@@ -4667,11 +4867,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "269": {
+  {
     "cardid": 269,
     "name": "Pain and Suffering",
     "col": "",
     "type": "Plot twist",
+    "limit": 4,
     "no": 50,
     "set": "def",
     "rarity": "",
@@ -4686,11 +4887,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "270": {
+  {
     "cardid": 270,
     "name": "Play Dead",
     "col": "",
     "type": "Plot twist",
+    "limit": 4,
     "no": 51,
     "set": "def",
     "rarity": "",
@@ -4705,11 +4907,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "271": {
+  {
     "cardid": 271,
     "name": "Fisk Tower",
     "col": "",
     "type": "Special Location",
+    "limit": 4,
     "no": 52,
     "set": "def",
     "rarity": "",
@@ -4724,11 +4927,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "272": {
+  {
     "cardid": 272,
     "name": "Loyal Soldiers",
     "col": "",
     "type": "Plot twist",
+    "limit": 4,
     "no": 53,
     "set": "def",
     "rarity": "",
@@ -4743,11 +4947,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "273": {
+  {
     "cardid": 273,
     "name": "Shock to the System",
     "col": "",
     "type": "Plot twist",
+    "limit": 4,
     "no": 54,
     "set": "def",
     "rarity": "",
@@ -4762,11 +4967,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "274": {
+  {
     "cardid": 274,
     "name": "Captain America",
     "col": "",
     "type": "Main Character L1",
+    "limit": 1,
     "no": 1,
     "set": "mnb",
     "rarity": "",
@@ -4787,11 +4993,12 @@
       "275"
     ]
   },
-  "275": {
+  {
     "cardid": 275,
     "name": "Captain America",
     "col": "",
     "type": "Main Character L2",
+    "limit": 1,
     "no": 2,
     "set": "mnb",
     "rarity": "",
@@ -4812,11 +5019,12 @@
       "274"
     ]
   },
-  "276": {
+  {
     "cardid": 276,
     "name": "Hulk",
     "col": "",
     "type": "Main Character L1",
+    "limit": 1,
     "no": 3,
     "set": "mnb",
     "rarity": "",
@@ -4837,11 +5045,12 @@
       "277"
     ]
   },
-  "277": {
+  {
     "cardid": 277,
     "name": "Hulk",
     "col": "",
     "type": "Main Character L2",
+    "limit": 1,
     "no": 4,
     "set": "mnb",
     "rarity": "",
@@ -4862,11 +5071,12 @@
       "276"
     ]
   },
-  "278": {
+  {
     "cardid": 278,
     "name": "Iron Man",
     "col": "",
     "type": "Main Character L1",
+    "limit": 1,
     "no": 5,
     "set": "mnb",
     "rarity": "",
@@ -4888,11 +5098,12 @@
       "104"
     ]
   },
-  "279": {
+  {
     "cardid": 279,
     "name": "Beast",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 43,
     "set": "mnb",
     "rarity": "",
@@ -4911,11 +5122,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "280": {
+  {
     "cardid": 280,
     "name": "Wolverine",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 44,
     "set": "mnb",
     "rarity": "",
@@ -4934,11 +5146,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "281": {
+  {
     "cardid": 281,
     "name": "Cable",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 45,
     "set": "mnb",
     "rarity": "",
@@ -4958,11 +5171,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "282": {
+  {
     "cardid": 282,
     "name": "Colossus",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 46,
     "set": "mnb",
     "rarity": "",
@@ -4981,11 +5195,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "283": {
+  {
     "cardid": 283,
     "name": "Emma Frost",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 47,
     "set": "mnb",
     "rarity": "",
@@ -5005,11 +5220,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "284": {
+  {
     "cardid": 284,
     "name": "Professor X",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 48,
     "set": "mnb",
     "rarity": "",
@@ -5029,11 +5245,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "285": {
+  {
     "cardid": 285,
     "name": "X-Factor",
     "col": "",
     "type": "Plot twist",
+    "limit": 4,
     "no": 49,
     "set": "mnb",
     "rarity": "",
@@ -5048,11 +5265,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "286": {
+  {
     "cardid": 286,
     "name": "Squad Tactics",
     "col": "",
     "type": "Plot twist",
+    "limit": 4,
     "no": 50,
     "set": "mnb",
     "rarity": "",
@@ -5067,11 +5285,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "287": {
+  {
     "cardid": 287,
     "name": "Uncanny Defense",
     "col": "",
     "type": "Plot twist",
+    "limit": 4,
     "no": 51,
     "set": "mnb",
     "rarity": "",
@@ -5086,11 +5305,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "288": {
+  {
     "cardid": 288,
     "name": "School for Gifted Youngsters",
     "col": "",
     "type": "Special Location",
+    "limit": 4,
     "no": 52,
     "set": "mnb",
     "rarity": "",
@@ -5105,11 +5325,12 @@
     "unlimited": "1",
     "notcollectable": 1
   },
-  "289": {
+  {
     "cardid": 289,
     "name": "Rocket",
     "col": "",
     "type": "Main Character L1",
+    "limit": 1,
     "no": 53,
     "set": "mnb",
     "rarity": "",
@@ -5131,11 +5352,12 @@
       "290"
     ]
   },
-  "290": {
+  {
     "cardid": 290,
     "name": "Rocket",
     "col": "",
     "type": "Main Character L2",
+    "limit": 1,
     "no": 54,
     "set": "mnb",
     "rarity": "",
@@ -5157,11 +5379,12 @@
       "289"
     ]
   },
-  "291": {
+  {
     "cardid": 291,
     "name": "Star-Lord",
     "col": "",
     "type": "Main Character L1",
+    "limit": 1,
     "no": 55,
     "set": "mnb",
     "rarity": "",
@@ -5183,11 +5406,12 @@
       "141"
     ]
   },
-  "320": {
+  {
     "cardid": 320,
     "name": "Ultron",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 93,
     "set": "mnb",
     "rarity": "",
@@ -5209,11 +5433,12 @@
     "ea": 1,
     "notcollectable": 1
   },
-  "321": {
+  {
     "cardid": 321,
     "name": "Warrant Officer Ripley",
     "col": "",
     "type": "Main Character L1",
+    "limit": 1,
     "no": 1,
     "set": "aln",
     "rarity": "",
@@ -5230,11 +5455,12 @@
     "faction": "the company",
     "unlimited": "1"
   },
-  "322": {
+  {
     "cardid": 322,
     "name": "Warrant Officer Ripley",
     "col": "",
     "type": "Main Character L2",
+    "limit": 1,
     "no": 2,
     "set": "aln",
     "rarity": "",
@@ -5251,11 +5477,12 @@
     "faction": "the company",
     "unlimited": "1"
   },
-  "333": {
+  {
     "cardid": 333,
     "name": "Lt. Ripley",
     "col": "",
     "type": "Main Character L1",
+    "limit": 1,
     "no": 3,
     "set": "aln",
     "rarity": "",
@@ -5273,11 +5500,12 @@
     "faction": "the company",
     "unlimited": "1"
   },
-  "334": {
+  {
     "cardid": 334,
     "name": "Lt. Ripley",
     "col": "",
     "type": "Main Character L2",
+    "limit": 1,
     "no": 4,
     "set": "aln",
     "rarity": "",
@@ -5295,11 +5523,12 @@
     "faction": "the company",
     "unlimited": "1"
   },
-  "335": {
+  {
     "cardid": 335,
     "name": "Sister Ripley",
     "col": "",
     "type": "Main Character L1",
+    "limit": 1,
     "no": 5,
     "set": "aln",
     "rarity": "",
@@ -5316,11 +5545,12 @@
     "faction": "the company",
     "unlimited": "1"
   },
-  "336": {
+  {
     "cardid": 336,
     "name": "Sister Ripley",
     "col": "",
     "type": "Main Character L2",
+    "limit": 1,
     "no": 6,
     "set": "aln",
     "rarity": "",
@@ -5337,11 +5567,12 @@
     "faction": "the company",
     "unlimited": "1"
   },
-  "337": {
+  {
     "cardid": 337,
     "name": "Ripley #8",
     "col": "",
     "type": "Main Character L1",
+    "limit": 1,
     "no": 7,
     "set": "aln",
     "rarity": "",
@@ -5358,11 +5589,12 @@
     "faction": "the company",
     "unlimited": "1"
   },
-  "338": {
+  {
     "cardid": 338,
     "name": "Ripley #8",
     "col": "",
     "type": "Main Character L2",
+    "limit": 1,
     "no": 8,
     "set": "aln",
     "rarity": "",
@@ -5379,11 +5611,12 @@
     "faction": "the company",
     "unlimited": "1"
   },
-  "339": {
+  {
     "cardid": 339,
     "name": "Newt",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 9,
     "set": "aln",
     "rarity": "",
@@ -5401,11 +5634,12 @@
     "faction": "the company",
     "unlimited": "1"
   },
-  "340": {
+  {
     "cardid": 340,
     "name": "Vriess",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 10,
     "set": "aln",
     "rarity": "",
@@ -5424,11 +5658,12 @@
     "faction": "the company",
     "unlimited": "1"
   },
-  "341": {
+  {
     "cardid": 341,
     "name": "Kane",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 11,
     "set": "aln",
     "rarity": "",
@@ -5446,11 +5681,12 @@
     "faction": "the company",
     "unlimited": "1"
   },
-  "342": {
+  {
     "cardid": 342,
     "name": "Captain Dallas",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 12,
     "set": "aln",
     "rarity": "",
@@ -5468,11 +5704,12 @@
     "faction": "the company",
     "unlimited": "1"
   },
-  "343": {
+  {
     "cardid": 343,
     "name": "Call",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 13,
     "set": "aln",
     "rarity": "",
@@ -5491,11 +5728,12 @@
     "faction": "the company",
     "unlimited": "1"
   },
-  "344": {
+  {
     "cardid": 344,
     "name": "CMO Clemens",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 14,
     "set": "aln",
     "rarity": "",
@@ -5513,11 +5751,12 @@
     "faction": "the company",
     "unlimited": "1"
   },
-  "345": {
+  {
     "cardid": 345,
     "name": "Parker",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 15,
     "set": "aln",
     "rarity": "",
@@ -5535,11 +5774,12 @@
     "faction": "the company",
     "unlimited": "1"
   },
-  "346": {
+  {
     "cardid": 346,
     "name": "Bishop",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 16,
     "set": "aln",
     "rarity": "",
@@ -5557,11 +5797,12 @@
     "faction": "the company",
     "unlimited": "1"
   },
-  "347": {
+  {
     "cardid": 347,
     "name": "Christie",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 17,
     "set": "aln",
     "rarity": "",
@@ -5580,11 +5821,12 @@
     "faction": "the company",
     "unlimited": "1"
   },
-  "348": {
+  {
     "cardid": 348,
     "name": "Brother Dillon",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 18,
     "set": "aln",
     "rarity": "",
@@ -5602,11 +5844,12 @@
     "faction": "the company",
     "unlimited": "1"
   },
-  "349": {
+  {
     "cardid": 349,
     "name": "Private Hudson",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 19,
     "set": "aln",
     "rarity": "",
@@ -5625,11 +5868,12 @@
     "faction": "the company",
     "unlimited": "1"
   },
-  "350": {
+  {
     "cardid": 350,
     "name": "Johner",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 20,
     "set": "aln",
     "rarity": "",
@@ -5648,11 +5892,12 @@
     "faction": "the company",
     "unlimited": "1"
   },
-  "351": {
+  {
     "cardid": 351,
     "name": "Ash",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 21,
     "set": "aln",
     "rarity": "",
@@ -5670,11 +5915,12 @@
     "faction": "the company",
     "unlimited": "1"
   },
-  "352": {
+  {
     "cardid": 352,
     "name": "Corporal Hicks",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 22,
     "set": "aln",
     "rarity": "",
@@ -5693,11 +5939,12 @@
     "faction": "the company",
     "unlimited": "1"
   },
-  "353": {
+  {
     "cardid": 353,
     "name": "M41A Pulse Rifle",
     "col": "",
     "type": "Equipment",
+    "limit": 4,
     "no": 23,
     "set": "aln",
     "rarity": "",
@@ -5712,11 +5959,12 @@
     "faction": "the company",
     "unlimited": "1"
   },
-  "354": {
+  {
     "cardid": 354,
     "name": "MU-TH-ER 6000",
     "col": "",
     "type": "Equipment",
+    "limit": 4,
     "no": 24,
     "set": "aln",
     "rarity": "",
@@ -5731,11 +5979,12 @@
     "faction": "the company",
     "unlimited": "1"
   },
-  "356": {
+  {
     "cardid": 356,
     "name": "Power Loader",
     "col": "",
     "type": "Equipment",
+    "limit": 4,
     "no": 25,
     "set": "aln",
     "rarity": "",
@@ -5750,11 +5999,12 @@
     "faction": "the company",
     "unlimited": "1"
   },
-  "357": {
+  {
     "cardid": 357,
     "name": "Weylan-Yutani Complex",
     "col": "",
     "type": "Special Location",
+    "limit": 4,
     "no": 26,
     "set": "aln",
     "rarity": "",
@@ -5768,11 +6018,12 @@
     "faction": "the company",
     "unlimited": "1"
   },
-  "358": {
+  {
     "cardid": 358,
     "name": "The Perfect Organism",
     "col": "",
     "type": "Main Character L1",
+    "limit": 1,
     "no": 27,
     "set": "aln",
     "rarity": "",
@@ -5789,11 +6040,12 @@
     "faction": "xenomorph",
     "unlimited": "1"
   },
-  "359": {
+  {
     "cardid": 359,
     "name": "The Perfect Organism",
     "col": "",
     "type": "Main Character L2",
+    "limit": 1,
     "no": 28,
     "set": "aln",
     "rarity": "",
@@ -5810,11 +6062,12 @@
     "faction": "xenomorph",
     "unlimited": "1"
   },
-  "360": {
+  {
     "cardid": 360,
     "name": "The Queen",
     "col": "",
     "type": "Main Character L1",
+    "limit": 1,
     "no": 29,
     "set": "aln",
     "rarity": "",
@@ -5831,11 +6084,12 @@
     "faction": "xenomorph",
     "unlimited": "1"
   },
-  "361": {
+  {
     "cardid": 361,
     "name": "The Queen",
     "col": "",
     "type": "Main Character L2",
+    "limit": 1,
     "no": 30,
     "set": "aln",
     "rarity": "",
@@ -5852,11 +6106,12 @@
     "faction": "xenomorph",
     "unlimited": "1"
   },
-  "362": {
+  {
     "cardid": 362,
     "name": "The Dragon",
     "col": "",
     "type": "Main Character L1",
+    "limit": 1,
     "no": 31,
     "set": "aln",
     "rarity": "",
@@ -5873,11 +6128,12 @@
     "faction": "xenomorph",
     "unlimited": "1"
   },
-  "363": {
+  {
     "cardid": 363,
     "name": "The Dragon",
     "col": "",
     "type": "Main Character L2",
+    "limit": 1,
     "no": 32,
     "set": "aln",
     "rarity": "",
@@ -5894,11 +6150,12 @@
     "faction": "xenomorph",
     "unlimited": "1"
   },
-  "364": {
+  {
     "cardid": 364,
     "name": "The Newborn",
     "col": "",
     "type": "Main Character L1",
+    "limit": 1,
     "no": 33,
     "set": "aln",
     "rarity": "",
@@ -5915,11 +6172,12 @@
     "faction": "xenomorph",
     "unlimited": "1"
   },
-  "365": {
+  {
     "cardid": 365,
     "name": "The Newborn",
     "col": "",
     "type": "Main Character L2",
+    "limit": 1,
     "no": 34,
     "set": "aln",
     "rarity": "",
@@ -5936,11 +6194,12 @@
     "faction": "xenomorph",
     "unlimited": "1"
   },
-  "366": {
+  {
     "cardid": 366,
     "name": "Ovomorph",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 35,
     "set": "aln",
     "rarity": "",
@@ -5958,11 +6217,12 @@
     "faction": "xenomorph",
     "unlimited": "1"
   },
-  "367": {
+  {
     "cardid": 367,
     "name": "Adolescent Xenomorph",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 36,
     "set": "aln",
     "rarity": "",
@@ -5980,11 +6240,12 @@
     "faction": "xenomorph",
     "unlimited": "1"
   },
-  "368": {
+  {
     "cardid": 368,
     "name": "Xenomorph Ambusher",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 37,
     "set": "aln",
     "rarity": "",
@@ -6002,11 +6263,12 @@
     "faction": "xenomorph",
     "unlimited": "1"
   },
-  "369": {
+  {
     "cardid": 369,
     "name": "Leaping Xenomporh",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 38,
     "set": "aln",
     "rarity": "",
@@ -6024,11 +6286,12 @@
     "faction": "xenomorph",
     "unlimited": "1"
   },
-  "370": {
+  {
     "cardid": 370,
     "name": "Ferocious Xenomorph",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 39,
     "set": "aln",
     "rarity": "",
@@ -6046,11 +6309,12 @@
     "faction": "xenomorph",
     "unlimited": "1"
   },
-  "371": {
+  {
     "cardid": 371,
     "name": "Salivating Xenomporh",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 40,
     "set": "aln",
     "rarity": "",
@@ -6068,11 +6332,12 @@
     "faction": "xenomorph",
     "unlimited": "1"
   },
-  "372": {
+  {
     "cardid": 372,
     "name": "Acid Blood Xenomorph",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 41,
     "set": "aln",
     "rarity": "",
@@ -6090,11 +6355,12 @@
     "faction": "xenomorph",
     "unlimited": "1"
   },
-  "373": {
+  {
     "cardid": 373,
     "name": "Xenomorph Spitter",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 42,
     "set": "aln",
     "rarity": "",
@@ -6113,11 +6379,12 @@
     "faction": "xenomorph",
     "unlimited": "1"
   },
-  "374": {
+  {
     "cardid": 374,
     "name": "Screeching Xenomorph",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 43,
     "set": "aln",
     "rarity": "",
@@ -6135,11 +6402,12 @@
     "faction": "xenomorph",
     "unlimited": "1"
   },
-  "375": {
+  {
     "cardid": 375,
     "name": "The Dragon",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 44,
     "set": "aln",
     "rarity": "",
@@ -6157,11 +6425,12 @@
     "faction": "xenomorph",
     "unlimited": "1"
   },
-  "376": {
+  {
     "cardid": 376,
     "name": "The Perfect Organism",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 45,
     "set": "aln",
     "rarity": "",
@@ -6179,11 +6448,12 @@
     "faction": "xenomorph",
     "unlimited": "1"
   },
-  "377": {
+  {
     "cardid": 377,
     "name": "The Newborn",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 46,
     "set": "aln",
     "rarity": "",
@@ -6201,11 +6471,12 @@
     "faction": "xenomorph",
     "unlimited": "1"
   },
-  "378": {
+  {
     "cardid": 378,
     "name": "The Queen",
     "col": "",
     "type": "Supporting character",
+    "limit": 4,
     "no": 47,
     "set": "aln",
     "rarity": "",
@@ -6223,11 +6494,12 @@
     "faction": "xenomorph",
     "unlimited": "1"
   },
-  "379": {
+  {
     "cardid": 379,
     "name": "Chestburst",
     "col": "",
     "type": "Plot twist",
+    "limit": 4,
     "no": 48,
     "set": "aln",
     "rarity": "",
@@ -6241,11 +6513,12 @@
     "faction": "xenomorph",
     "unlimited": "1"
   },
-  "380": {
+  {
     "cardid": 380,
     "name": "Spook",
     "col": "",
     "type": "Plot twist",
+    "limit": 4,
     "no": 49,
     "set": "aln",
     "rarity": "",
@@ -6259,11 +6532,12 @@
     "faction": "xenomorph",
     "unlimited": "1"
   },
-  "390": {
+  {
     "cardid": 390,
     "name": "Build the Hive",
     "col": "",
     "type": "Plot twist",
+    "limit": 4,
     "no": 50,
     "set": "aln",
     "rarity": "",
@@ -6277,11 +6551,12 @@
     "faction": "xenomorph",
     "unlimited": "1"
   },
-  "391": {
+  {
     "cardid": 391,
     "name": "LV-426",
     "col": "",
     "type": "Special Location",
+    "limit": 4,
     "no": 51,
     "set": "aln",
     "rarity": "",
@@ -6295,11 +6570,12 @@
     "faction": "xenomorph",
     "unlimited": "1"
   },
-  "392": {
+  {
     "cardid": 392,
     "name": "Facehugger",
     "col": "",
     "type": "Facehugger Pile",
+    "limit": 3,
     "no": 52,
     "set": "aln",
     "rarity": "",
@@ -6317,11 +6593,12 @@
     "faction": "xenomorph",
     "unlimited": "1"
   },
-  "393": {
+  {
     "cardid": 393,
     "name": "Extended Incubation",
     "col": "",
     "type": "Facehugger Pile",
+    "limit": 1,
     "no": 53,
     "set": "aln",
     "rarity": "",
@@ -6335,11 +6612,12 @@
     "faction": "xenomorph",
     "unlimited": "1"
   },
-  "394": {
+  {
     "cardid": 394,
     "name": "Let's Rock!",
     "col": "",
     "type": "Plot twist",
+    "limit": 4,
     "no": 54,
     "set": "aln",
     "rarity": "",
@@ -6353,11 +6631,12 @@
     "faction": "neutral",
     "unlimited": "1"
   },
-  "395": {
+  {
     "cardid": 395,
     "name": "The Nostromo",
     "col": "",
     "type": "Location",
+    "limit": 4,
     "no": 55,
     "set": "aln",
     "rarity": "",
@@ -6371,11 +6650,12 @@
     "faction": "neutral",
     "unlimited": "1"
   },
-  "396": {
+  {
     "cardid": 396,
     "name": "The Sulaco",
     "col": "",
     "type": "Location",
+    "limit": 4,
     "no": 56,
     "set": "aln",
     "rarity": "",
@@ -6389,11 +6669,12 @@
     "faction": "neutral",
     "unlimited": "1"
   },
-  "397": {
+  {
     "cardid": 397,
     "name": "The Auriga",
     "col": "",
     "type": "Location",
+    "limit": 4,
     "no": 57,
     "set": "aln",
     "rarity": "",
@@ -6407,11 +6688,12 @@
     "faction": "neutral",
     "unlimited": "1"
   },
-  "398": {
+  {
     "cardid": 398,
     "name": "Fury 161",
     "col": "",
     "type": "Location",
+    "limit": 4,
     "no": 58,
     "set": "aln",
     "rarity": "",
@@ -6425,11 +6707,12 @@
     "faction": "neutral",
     "unlimited": "1"
   },
-  "399": {
+  {
     "cardid": 399,
     "name": "Earth",
     "col": "",
     "type": "Location",
+    "limit": 4,
     "no": 59,
     "set": "aln",
     "rarity": "",
@@ -6443,11 +6726,12 @@
     "faction": "neutral",
     "unlimited": "1"
   },
-  "400": {
+  {
     "cardid": 400,
     "name": "Space",
     "col": "",
     "type": "Location",
+    "limit": 4,
     "no": 60,
     "set": "aln",
     "rarity": "",
@@ -6461,4 +6745,4 @@
     "faction": "neutral",
     "unlimited": "1"
   }
-}
+]
