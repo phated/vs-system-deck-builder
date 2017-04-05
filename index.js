@@ -61,54 +61,61 @@ function update(model, action) {
   var updated;
 
   switch(action.type) {
+    // MC
     case 'ADD_MC': {
       updated = Immutable.updateIn(model, ['mc', action.payload], increment);
-      return { model: updated };
-    }
-    case 'ADD_LOCATION': {
-      updated = Immutable.updateIn(model, ['location', action.payload], increment);
-      return { model: updated };
-    }
-    case 'ADD_SC': {
-      updated = Immutable.updateIn(model, ['sc', action.payload], increment);
-      return { model: updated };
-    }
-    case 'ADD_PT': {
-      updated = Immutable.updateIn(model, ['pt', action.payload], increment);
-      return { model: updated };
-    }
-    case 'ADD_EQUIPMENT': {
-      updated = Immutable.updateIn(model, ['equipment', action.payload], increment);
-      return { model: updated };
-    }
-    case 'ADD_TOKEN': {
-      updated = Immutable.updateIn(model, ['token', action.payload], increment);
       return { model: updated };
     }
     case 'RESET_MC': {
       updated = Immutable.setIn(model, ['mc', action.payload], undefined);
       return { model: updated };
     }
+    // Location
+    case 'ADD_LOCATION': {
+      updated = Immutable.updateIn(model, ['location', action.payload], increment);
+      return { model: updated };
+    }
     case 'RESET_LOCATION': {
       updated = Immutable.setIn(model, ['location', action.payload], undefined);
+      return { model: updated };
+    }
+    // SC
+    case 'ADD_SC': {
+      updated = Immutable.updateIn(model, ['sc', action.payload], increment);
       return { model: updated };
     }
     case 'RESET_SC': {
       updated = Immutable.setIn(model, ['sc', action.payload], undefined);
       return { model: updated };
     }
+    // PT
+    case 'ADD_PT': {
+      updated = Immutable.updateIn(model, ['pt', action.payload], increment);
+      return { model: updated };
+    }
     case 'RESET_PT': {
       updated = Immutable.setIn(model, ['pt', action.payload], undefined);
+      return { model: updated };
+    }
+    // Equipment
+    case 'ADD_EQUIPMENT': {
+      updated = Immutable.updateIn(model, ['equipment', action.payload], increment);
       return { model: updated };
     }
     case 'RESET_EQUIPMENT': {
       updated = Immutable.setIn(model, ['equipment', action.payload], undefined);
       return { model: updated };
     }
+    // Token
+    case 'ADD_TOKEN': {
+      updated = Immutable.updateIn(model, ['token', action.payload], increment);
+      return { model: updated };
+    }
     case 'RESET_TOKEN': {
       updated = Immutable.setIn(model, ['token', action.payload], undefined);
       return { model: updated };
     }
+    // UI stuff
     case 'EXPAND_CARD': {
       updated = Immutable.update(model, 'cards', function(cards) {
         return cards.map(function(card) {
