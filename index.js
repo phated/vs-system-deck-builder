@@ -29,7 +29,8 @@ function init() {
       sc: {},
       pt: {},
       equipment: {},
-      token: {}
+      token: {},
+      cards: data
     }),
     effect: 'ATTACH_TABS'
   };
@@ -57,15 +58,39 @@ function update(model, action) {
       return { model: updated };
     }
     case 'ADD_PT': {
-       updated = Immutable.updateIn(model, ['pt', action.payload], increment);
+      updated = Immutable.updateIn(model, ['pt', action.payload], increment);
       return { model: updated };
     }
     case 'ADD_EQUIPMENT': {
-       updated = Immutable.updateIn(model, ['equipment', action.payload], increment);
+      updated = Immutable.updateIn(model, ['equipment', action.payload], increment);
       return { model: updated };
     }
     case 'ADD_TOKEN': {
-       updated = Immutable.updateIn(model, ['token', action.payload], increment);
+      updated = Immutable.updateIn(model, ['token', action.payload], increment);
+      return { model: updated };
+    }
+    case 'EXPAND_CARD': {
+      updated = Immutable.update(model, 'cards', function(cards) {
+        return cards.map(function(card) {
+          if (card.guid === action.payload) {
+            return Immutable.set(card, 'expanded', true);
+          } else {
+            return card;
+          }
+        });
+      });
+      return { model: updated };
+    }
+    case 'COLLAPSE_CARD': {
+      updated = Immutable.update(model, 'cards', function(cards) {
+        return cards.map(function(card) {
+          if (card.guid === action.payload) {
+            return Immutable.set(card, 'expanded', false);
+          } else {
+            return card;
+          }
+        });
+      });
       return { model: updated };
     }
     default: {
@@ -75,7 +100,7 @@ function update(model, action) {
 }
 
 function cardListPane(model, dispatch) {
-  var cards = data.map(function(card) {
+  var cards = model.cards.asMutable({ deep: true }).map(function(card) {
     return cardView(card, model, dispatch);
   });
 
@@ -180,6 +205,12 @@ function cardView(card, model, dispatch) {
       debugger;
   }
   var addToDeck = dispatch.bind(null, { type: type, payload: card.guid });
+  var toggleDetails;
+  if (card.expanded) {
+    toggleDetails = dispatch.bind(null, { type: 'COLLAPSE_CARD', payload: card.guid });
+  } else {
+    toggleDetails = dispatch.bind(null, { type: 'EXPAND_CARD', payload: card.guid });
+  }
 
   var changeButton = html`
     <button className="${classes.addToDeckButton}" onclick=${addToDeck}>
@@ -190,7 +221,7 @@ function cardView(card, model, dispatch) {
   return html`
     <div id=${card.guid} className=${classes.listItem}>
       <img className="${classes.cardThumbnail}" src="${'images/cards/small/' + card.image + '.jpg'}" />
-      <div className="${classes.cardDetails}">
+      <div className="${classes.cardDetails}" onclick=${toggleDetails}>
         <div className="${classes.cardTitle}">${card.name}</div>
         ${moreDetailsView(card)}
         <div className="${classes.cardCounts}">
