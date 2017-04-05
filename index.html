@@ -53,6 +53,21 @@
       height: 100vh;
       box-sizing: border-box;
     }
+
+    .pane {
+      width: 100%;
+      flex-shrink: 0;
+      overflow-x: auto;
+      align-self: flex-start;
+      height: 100%;
+      padding: 0 8px;
+      box-sizing: border-box;
+      /*
+        Ref https://github.com/hammerjs/hammer.js/issues/1056 and
+        https://github.com/hammerjs/hammer.js/issues/1050
+      */
+      touch-action: pan-y;
+    }
   </style>
 </head>
 <body>
@@ -64,8 +79,6 @@
       </div>
     </nav>
     <div class="pane-container">
-      <div>Pane 1</div>
-      <div>Pane 2</div>
     </div>
   </div>
   <script src="index.js"></script>
