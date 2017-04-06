@@ -169,7 +169,7 @@ function abilityView(card) {
     <div className="${classes.cardDetailLine}"></div>
   `;
 
-  out.inneryo = card.text;
+  out.innerHTML = card.text;
 
   return out;
 }
@@ -256,7 +256,7 @@ function cardView(card, model, dispatch) {
 
   return yo`
     <div id=${card.guid} className=${classes.listItem}>
-      <img className="${classes.cardThumbnail}" src="${'images/cards/small/' + card.image + '.jpg'}" />
+      <img className="${classes.cardThumbnail}" src="${'images/cards/small/' + card.image.toLowerCase() + '.jpg'}" />
       <div className="${classes.cardDetails}" onclick=${toggleDetails}>
         <div className="${classes.cardTitle}">${card.name}</div>
         ${moreDetailsView(card)}

@@ -16,7 +16,7 @@ function dotbarView(paneCount, selected) {
     } else {
       dot = yo`<span></span>`;
     }
-    dot.inneryo = '&middot;';
+    dot.innerHTML = '&middot;';
     dots.push(dot);
   }
   var dotbar = yo`<div className="dotbar">
