@@ -6224,7 +6224,7 @@ module.exports = [
     "name": "Adolescent Xenomorph",
     "col": "",
     "type": "Supporting character",
-    "limit": 4,
+    "limit": 8,
     "no": 36,
     "set": "aln",
     "rarity": "",
