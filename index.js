@@ -3,7 +3,7 @@
 var inu = require('inu');
 var start = inu.start;
 var pull = inu.pull;
-var html = inu.html;
+var yo = require('yo-yo');
 
 var Immutable = require('seamless-immutable');
 
@@ -135,13 +135,13 @@ function cardListPane(model, dispatch) {
     return cardView(card, model, dispatch);
   });
 
-  return html`<div id="card-list-pane" class="pane">
+  return yo`<div id="card-list-pane" class="pane">
     ${cards}
   </div>`;
 }
 
 function statsView(card) {
-  return html`
+  return yo`
     <div className="${classes.cardDetailLine}">
       <span>${card.atk}</span>
       <span><img src="images/icons/cards/attack.png"></span>
@@ -159,17 +159,17 @@ function typeView(card) {
     text += ` - ${card.traits}`;
   }
 
-  return html`
+  return yo`
     <div className="${classes.cardDetailLine}">${text}</div>
   `;
 }
 
 function abilityView(card) {
-  var out = html`
+  var out = yo`
     <div className="${classes.cardDetailLine}"></div>
   `;
 
-  out.innerHTML = card.text;
+  out.inneryo = card.text;
 
   return out;
 }
@@ -179,7 +179,7 @@ function costView(card) {
     return;
   }
 
-  return html`
+  return yo`
     <div className="${classes.cardDetailLine}">Cost: ${card.cost}</div>
   `;
 }
@@ -189,7 +189,7 @@ function moreDetailsView(card) {
     return;
   }
 
-  return html`
+  return yo`
     <div className="${classes.moreDetails}">
       ${costView(card)}
       ${typeView(card)}
@@ -248,13 +248,13 @@ function cardView(card, model, dispatch) {
     toggleDetails = dispatch.bind(null, { type: 'EXPAND_CARD', payload: card.guid });
   }
 
-  var changeButton = html`
+  var changeButton = yo`
     <button className="${classes.addToDeckButton}" onclick=${addToDeck}>
       <span className="${classes.visuallyhidden}">Add To Deck</span>
     </button>
   `;
 
-  return html`
+  return yo`
     <div id=${card.guid} className=${classes.listItem}>
       <img className="${classes.cardThumbnail}" src="${'images/cards/small/' + card.image + '.jpg'}" />
       <div className="${classes.cardDetails}" onclick=${toggleDetails}>
@@ -280,7 +280,7 @@ function count(obj) {
 }
 
 function header(title, amount) {
-  return html`<div id=${title} className="${classes.listItemHeader}">${title} (${amount})</div>`
+  return yo`<div id=${title} className="${classes.listItemHeader}">${title} (${amount})</div>`
 }
 
 function mcView(model, dispatch) {
@@ -440,7 +440,7 @@ function tokenView(model, dispatch) {
 }
 
 function deckListPane(model, dispatch) {
-  return html`<div id="deck-list-pane" className="pane">
+  return yo`<div id="deck-list-pane" className="pane">
     ${mcView(model, dispatch)}
     ${locationView(model, dispatch)}
     ${equipmentView(model, dispatch)}
@@ -451,7 +451,7 @@ function deckListPane(model, dispatch) {
 }
 
 function view(model, dispatch) {
-  return html`
+  return yo`
     <div class="pane-container">
       ${cardListPane(model, dispatch)}
       ${deckListPane(model, dispatch)}
@@ -511,7 +511,7 @@ function render(view) {
 
   renderRequested = true;
   requestAnimationFrame(function() {
-    html.update(paneContainerEl, view, { childrenOnly: true });
+    yo.update(paneContainerEl, view, { childrenOnly: true });
     renderRequested = false;
 
     if (firstRender) {

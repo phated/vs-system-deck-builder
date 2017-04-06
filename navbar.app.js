@@ -3,7 +3,7 @@
 var inu = require('inu');
 var start = inu.start;
 var pull = inu.pull;
-var html = inu.html;
+var yo = require('yo-yo');
 
 var xtend = require('xtend');
 
@@ -12,14 +12,14 @@ function dotbarView(paneCount, selected) {
   for (var x = 0; x < paneCount; x++) {
     var dot;
     if (x === selected) {
-      dot = html`<span className="dot-selected"></span>`;
+      dot = yo`<span className="dot-selected"></span>`;
     } else {
-      dot = html`<span></span>`;
+      dot = yo`<span></span>`;
     }
-    dot.innerHTML = '&middot;';
+    dot.inneryo = '&middot;';
     dots.push(dot);
   }
-  var dotbar = html`<div className="dotbar">
+  var dotbar = yo`<div className="dotbar">
     ${dots}
   </div>`;
 
@@ -56,7 +56,7 @@ function mount(mountEl, notifyListen) {
   }
 
   function view(model) {
-    return html`
+    return yo`
       <nav class="navbar">
         <div>${model.tabs[model.tabIndex]}</div>
         ${dotbarView(model.tabs.length, model.tabIndex)}
@@ -90,7 +90,7 @@ function mount(mountEl, notifyListen) {
 
   function renderNavbar(view) {
     console.log('render navbar');
-    html.update(mountEl, view);
+    yo.update(mountEl, view);
   }
 
   pull(
