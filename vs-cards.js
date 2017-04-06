@@ -1,4 +1,6 @@
-[
+'use strict';
+
+module.exports = [
   {
     "cardid": 1,
     "name": "Captain Marvel",
