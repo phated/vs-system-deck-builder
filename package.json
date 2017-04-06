@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "budo index.js --live --open --dir .",
-    "build": "browserify -d -g uglifyify -p bundle-collapser/plugin index.js | exorcist dist/index.js.map > dist/index.min.js"
+    "build": "browserify -d -g uglifyify -p bundle-collapser/plugin index.js | exorcist dist/index.js.map > dist/index.min.js",
+    "deploy": "npm run build && surge ./dist --domain vssystem.surge.sh"
   },
   "repository": {
     "type": "git",
@@ -38,6 +39,7 @@
     "bundle-collapser": "^1.2.1",
     "es2020": "^1.1.9",
     "exorcist": "^0.4.0",
+    "surge": "^0.19.0",
     "uglifyify": "^3.0.4",
     "yo-yoify": "^3.7.0"
   },
