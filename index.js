@@ -41,7 +41,8 @@ function init() {
       token: {},
       cards: Immutable.asObject(data, function(card) {
         return [card.guid, card];
-      })
+      }),
+      route: '/'
     }),
     effect: 'INIT_APP'
   };
@@ -61,6 +62,10 @@ function update(model, action) {
       updated = Immutable.merge(model, action.payload, { deep: true });
       return { model: updated };
     }
+    // Routing
+    case 'UPDATE_LOCATION':
+      updated = Immutable.setIn(model, ['route'], action.payload);
+      return { model: updated };
     // MC
     case 'ADD_MC': {
       updated = Immutable.updateIn(model, ['mc', action.payload], increment);
@@ -256,7 +261,9 @@ function cardView(card, model, dispatch) {
 
   return yo`
     <div id=${card.guid} className=${classes.listItem}>
-      <img className="${classes.cardThumbnail}" src="${'images/cards/small/' + card.image.toLowerCase() + '.jpg'}" />
+      <a href="/card/${card.guid}">
+        <img className="${classes.cardThumbnail}" src="${'images/cards/small/' + card.image.toLowerCase() + '.jpg'}" />
+      </a>
       <div className="${classes.cardDetails}" onclick=${toggleDetails}>
         <div className="${classes.cardTitle}">${card.name}</div>
         ${moreDetailsView(card)}
@@ -450,7 +457,7 @@ function deckListPane(model, dispatch) {
   </div>`;
 }
 
-function view(model, dispatch) {
+function mainView(params, model, dispatch) {
   return yo`
     <div class="pane-container">
       ${cardListPane(model, dispatch)}
@@ -459,11 +466,57 @@ function view(model, dispatch) {
   `;
 }
 
+var many = require('pull-many');
+var Pushable = require('pull-pushable');
+var sheetRouter = require('sheet-router');
+var history = require('sheet-router/history');
+var href = require('sheet-router/href');
+
+function createRouter(config) {
+  var routes = reduce(config, function(result, handler, path) {
+    result.push([path, handler]);
+    return result;
+  }, []);
+
+  console.log(routes);
+
+  return sheetRouter(routes);
+}
+
+var router = createRouter({
+  '/': mainView,
+  '/card/:guid': function(params, model, dispatch) {
+    var card = Immutable.getIn(model, ['cards', params.guid]);
+    return yo`
+      <div class="pane-container">
+        <img src="${'images/cards/big/' + card.image.toLowerCase() + '.jpg'}" />
+      </div>
+    `;
+  }
+})
+
+function view(model, dispatch) {
+  return router(model.route, model, dispatch);
+}
+
 
 function run(effect, sources) {
   switch(effect) {
     case 'INIT_APP': {
-      return pull(
+      // TODO: onClose?
+      var routerStream = Pushable();
+      href(push);
+      history(push);
+
+      function push (href) {
+        console.log(href);
+        routerStream.push({
+          type: 'UPDATE_LOCATION',
+          payload: href.pathname
+        });
+      }
+
+      var loadStream = pull(
         pl.read(db),
         pull.map(function (row) {
           return {
@@ -472,6 +525,8 @@ function run(effect, sources) {
           }
         })
       );
+
+      return many([routerStream, loadStream]);
     }
     case 'SAVE_DECK': {
       console.log(sources);
