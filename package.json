@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "budo index.js --live --open --dir .",
     "build": "browserify -d -g uglifyify -p bundle-collapser/plugin index.js | exorcist dist/index.js.map > dist/index.min.js",
-    "deploy": "npm run build && surge ./dist --domain vssystem.surge.sh"
+    "deploy": "npm run build && surge ./dist --domain vssystem.surge.sh",
+    "from-csv": "csvtojson vs-cards-normalized.csv > vs-cards.normalized.json"
   },
   "repository": {
     "type": "git",
@@ -37,6 +38,7 @@
     "browserify": "^14.3.0",
     "budo": "^9.4.7",
     "bundle-collapser": "^1.2.1",
+    "csvtojson": "^1.1.5",
     "es2020": "^1.1.9",
     "exorcist": "^0.4.0",
     "surge": "^0.19.0",
