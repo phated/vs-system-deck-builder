@@ -207,6 +207,7 @@ function cardView(card, model, dispatch) {
   switch(card.type) {
     case 'Main Character L1':
     case 'Main Character L2':
+    case 'Main Character L3':
       type = 'MC';
       used = Immutable.getIn(model, ['mc', card.guid], 0);
       break;
