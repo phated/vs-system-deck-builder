@@ -166,7 +166,7 @@ function typeView(card) {
 
 function abilityView(card) {
   var out = yo`
-    <div className="${classes.cardDetailLine}"></div>
+    <div className="${classes.cardDetailLine} ${classes.cardAbility}"></div>
   `;
 
   out.innerHTML = card.text;

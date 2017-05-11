@@ -43,6 +43,10 @@ var cardDetailLine = cxs({
   // whiteSpace: 'pre-wrap'
 });
 
+var cardAbility = cxs({
+  whiteSpace: 'pre-wrap'
+});
+
 var cardTitle = cxs({
   flexGrow: 1,
   fontWeight: 700,
@@ -88,6 +92,7 @@ module.exports = {
   cardDetails: cardDetails,
   moreDetails: moreDetails,
   cardDetailLine: cardDetailLine,
+  cardAbility: cardAbility,
   cardTitle: cardTitle,
   cardCounts: cardCounts
 };
