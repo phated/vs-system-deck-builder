@@ -7,30 +7,13 @@ var yo = require('yo-yo');
 
 var xtend = require('xtend');
 
-function dotbarView(paneCount, selected) {
-  var dots = [];
-  for (var x = 0; x < paneCount; x++) {
-    var dot;
-    if (x === selected) {
-      dot = yo`<span className="dot-selected"></span>`;
-    } else {
-      dot = yo`<span></span>`;
-    }
-    dot.innerHTML = '&middot;';
-    dots.push(dot);
-  }
-  var dotbar = yo`<div className="dotbar">
-    ${dots}
-  </div>`;
-
-  return dotbar;
-}
-
 function mount(mountEl, notifyListen) {
+
+  var listener = notifyListen();
 
   function init() {
     var model = {
-      tabs: ['Card List', 'Deck List'],
+      tabs: [{ title: 'Cards', url: '/' }, { title: 'Deck', url: '/deck' }],
       tabIndex: 0
     };
 
@@ -56,10 +39,18 @@ function mount(mountEl, notifyListen) {
   }
 
   function view(model) {
+    var navitems = model.tabs.map(function(tab, idx) {
+      var classes = ['navitem'];
+      if (model.tabIndex === idx) {
+        classes.push('selected');
+      }
+
+      return yo`<a class="${classes.join(' ')}" href="${tab.url}">${tab.title}</a>`
+    });
+
     return yo`
       <nav class="navbar">
-        <div>${model.tabs[model.tabIndex]}</div>
-        ${dotbarView(model.tabs.length, model.tabIndex)}
+        ${navitems}
       </nav>
     `;
   }
@@ -69,7 +60,7 @@ function mount(mountEl, notifyListen) {
       case 'UPDATE_LISTEN': {
         console.log('update listen');
         return pull(
-          notifyListen(),
+          listener,
           pull.map(function(tabIndex) {
             return {
               type: 'UPDATE_NAVBAR',

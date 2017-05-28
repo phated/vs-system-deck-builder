@@ -41,6 +41,14 @@ function attach(container) {
   gestures.on('panright', onPanRight);
   gestures.on('panend pancancel', onPanEnd);
 
+  ee.on('show-tab', function(idx) {
+    if (idx === tabIndex) {
+      return;
+    }
+    tabIndex = idx;
+    var percent = -(100 * idx);
+    show(percent, true);
+  });
 
   return ee;
 

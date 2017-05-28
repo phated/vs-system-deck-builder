@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "budo index.js --live --open --dir .",
+    "start": "budo index.js --pushstate --live --open --dir .",
     "build": "browserify -d -g uglifyify -p bundle-collapser/plugin index.js | exorcist dist/index.js.map > dist/index.min.js",
     "deploy": "npm run build && surge ./dist --domain vssystem.surge.sh",
     "from-csv": "csvtojson vs-cards-normalized.csv > vs-cards.normalized.json"
@@ -31,6 +31,7 @@
     "pull-level": "^2.0.3",
     "pull-notify": "^0.1.1",
     "seamless-immutable": "^7.1.2",
+    "sheet-router": "^4.2.3",
     "xtend": "^4.0.1",
     "yo-yo": "^1.4.0"
   },

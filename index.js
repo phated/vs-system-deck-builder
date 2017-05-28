@@ -500,8 +500,46 @@ var app = {
 
 var sources = start(app);
 
-var firstRender = true;
 var renderRequested = false;
+
+var href = require('sheet-router/href');
+var hist = require('sheet-router/history');
+
+var tabEE = attach(paneContainerEl);
+var notify = Notify();
+navbarMount(navbarEl, notify.listen);
+tabEE.on('tab-shown', function(tabIndex) {
+  if (tabIndex === 1) {
+    if (window.location.pathname !== '/deck') {
+      history.pushState(null, null, '/deck');
+    }
+  } else {
+    if (window.location.pathname !== '/') {
+      history.pushState(null, null, '/');
+    }
+  }
+  notify(tabIndex);
+});
+
+function showTab(location) {
+  var tabIndex = 0;
+  if (location.pathname === '/deck') {
+    tabIndex = 1;
+  }
+  notify(tabIndex);
+  tabEE.emit('show-tab', tabIndex);
+}
+
+hist(function(location) {
+  console.log('history');
+  showTab(location);
+});
+href(function (location) {
+  history.pushState(null, null, location.pathname);
+  showTab(location);
+});
+
+showTab(window.location);
 
 function render(view) {
   if (renderRequested) {
@@ -514,15 +552,6 @@ function render(view) {
   requestAnimationFrame(function() {
     yo.update(paneContainerEl, view, { childrenOnly: true });
     renderRequested = false;
-
-    if (firstRender) {
-      console.log('attach tabs');
-      var notify = Notify();
-      var tabEE = attach(paneContainerEl);
-      tabEE.on('tab-shown', notify);
-      navbarMount(navbarEl, notify.listen);
-      firstRender = false;
-    }
   });
 }
 
