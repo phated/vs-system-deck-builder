@@ -23,7 +23,7 @@ var navbarMount = require('./navbar.app');
 var navbarEl = document.querySelector('.navbar');
 var paneContainerEl = document.querySelector('.pane-container');
 
-var data = require('./vs-cards');
+var data = require('./vs-cards.normalized');
 console.log(data);
 
 var attach = require('./tabs');
@@ -141,6 +141,10 @@ function cardListPane(model, dispatch) {
 }
 
 function statsView(card) {
+  if (!(card.atk || card.def || card.health)) {
+    return;
+  }
+
   return yo`
     <div className="${classes.cardDetailLine}">
       <span>${card.atk}</span>
@@ -164,12 +168,44 @@ function typeView(card) {
   `;
 }
 
+var icons = {
+  // other icons
+  anyturn: '/images/icons/cards/anyturn.png',
+  health: '/images/icons/cards/health.png',
+  // traits
+  ranged: 'images/icons/cards/ranged.png',
+  flight: '/images/icons/cards/flight.png',
+  // locations
+  red: '/images/icons/colors/skill.png',
+  blue: '/images/icons/colors/energy.png',
+  green: '/images/icons/colors/might.png',
+  yellow: '/images/icons/colors/intellect.png',
+  earth: '/images/icons/colors/humanity.png',
+  space: '/images/icons/colors/alien.png',
+  // teams
+  'a-force': '/images/icons/cards/a-forcem.png',
+  femme: '/images/icons/cards/femme fatalesm.png',
+  defenders: '/images/icons/cards/defendersm.png',
+  underworld: '/images/icons/cards/underworldm.png',
+  avenger: '/images/icons/cards/avengersm.png',
+  'x-men': '/images/icons/cards/xmenm.png',
+  guardians: '/images/icons/cards/guardians of the galaxym.png',
+  villain: '/images/icons/cards/villainsm.png',
+  company: '/images/icons/cards/thecompanym.png',
+  xenomorph: '/images/icons/cards/xenomorphm.png'
+};
+
 function abilityView(card) {
   var out = yo`
     <div className="${classes.cardDetailLine} ${classes.cardAbility}"></div>
   `;
 
-  out.innerHTML = card.text;
+  // TODO: translate to virtual elements
+  var ability = card.text.replace(/\[([\w|-]+)\]/g, function(match, iconKey) {
+    return `<img src="${icons[iconKey]}" />`
+  });
+
+  out.innerHTML = ability;
 
   return out;
 }
@@ -257,7 +293,7 @@ function cardView(card, model, dispatch) {
 
   return yo`
     <div id=${card.guid} className=${classes.listItem}>
-      <img className="${classes.cardThumbnail}" src="${'images/cards/small/' + card.image.toLowerCase() + '.jpg'}" />
+      <img className="${classes.cardThumbnail}" src="${card.thumbnail_url}" />
       <div className="${classes.cardDetails}" onclick=${toggleDetails}>
         <div className="${classes.cardTitle}">${card.name}</div>
         ${moreDetailsView(card)}
