@@ -1,0 +1,29 @@
+{
+  "name": "vs-system-deck-builder-analytics",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "node ./index",
+    "deploy": "now --public"
+  },
+  "now": {
+    "env": {
+      "NODE_ENV": "production"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phated/vs-system-deck-builder.git"
+  },
+  "author": "Blaine Bublitz <blaine.bublitz@gmail.com> (https://github.com/phated)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/phated/vs-system-deck-builder/issues"
+  },
+  "homepage": "https://github.com/phated/vs-system-deck-builder#readme",
+  "dependencies": {
+    "fair-analytics": "^1.1.0"
+  },
+  "devDependencies": {
+    "now": "^6.2.2"
+  }
+}

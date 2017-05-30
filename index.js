@@ -30,6 +30,26 @@ var attach = require('./tabs');
 
 var classes = require('./classes');
 
+require('when/es6-shim/Promise.browserify-es6');
+var fairAnalytics = require('fair-analytics-client-api');
+
+function logView() {
+  var url = 'https://vssdb-analytics.now.sh/';
+
+  // create a fa instance
+  var fa = fairAnalytics({
+    url: url // the URL of your hosted Fair Analytics instance
+  });
+
+  var options = {
+    event: 'pageView', // event is mandatory and can be anything
+    pathname: window.location.pathname
+  }
+
+  // track events
+  fa.send(options); // fire and forget
+}
+
 function init() {
   return {
     model: Immutable({
@@ -608,3 +628,5 @@ pull(
     console.log(model);
   })
 );
+
+logView();
