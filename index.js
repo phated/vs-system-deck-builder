@@ -157,21 +157,11 @@ function statsView(card) {
   `;
 }
 
-function typeView(card) {
-  var text = card.type;
-  if (card.traits) {
-    text += ` - ${card.traits}`;
-  }
-
-  return yo`
-    <div className="${classes.cardDetailLine}">${text}</div>
-  `;
-}
-
 var icons = {
   // other icons
   anyturn: '/images/icons/cards/anyturn.png',
   health: '/images/icons/cards/health.png',
+  marvel: '/images/icons/cards/marvelm.png',
   // traits
   ranged: 'images/icons/cards/ranged.png',
   flight: '/images/icons/cards/flight.png',
@@ -194,6 +184,22 @@ var icons = {
   company: '/images/icons/cards/thecompanym.png',
   xenomorph: '/images/icons/cards/xenomorphm.png'
 };
+
+function typeView(card) {
+  var out = yo`
+    <div className="${classes.cardDetailLine}">${card.type}</div>
+  `;
+
+  if (card.traits) {
+    var traits = card.traits.replace(/\[([\w|-]+)\]/g, function(match, iconKey) {
+      return `<img src="${icons[iconKey]}" />`
+    });
+    out.innerHTML += ` - ${traits}`;
+  }
+
+
+  return out;
+}
 
 function abilityView(card) {
   var out = yo`
